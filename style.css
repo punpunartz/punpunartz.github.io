@@ -287,9 +287,23 @@ color: gray;
 .graphic-row3 {background-color: #f37620;}
 
 
+
+
+.animafast {display: inline;
+ width: 30%;}
+
+.magazine h1 {font-family: 'Passion One',sans-serif;
+                            font-size: 40px;
+                            padding-bottom: 0px;
+margin-bottom: 4px;}
+
+
+
+
+
 .comic-punpun-pdf h1 {font-family: 'Passion One',sans-serif;
                             font-size: 40px;
-                            padding-bottom: 0 px;
+                            padding-bottom: 0px;
 margin-bottom: 4px;}
 
 
