@@ -289,13 +289,12 @@ color: gray;
 
 
 
-.animafast {display: inline;
- width: 30%;}
+.magazine {display: inline;}
 
 .magazine h1 {font-family: 'Passion One',sans-serif;
                             font-size: 40px;
                             padding-bottom: 0px;
-margin-bottom: 4px;}
+                            margin-bottom: 4px;}
 
 
 
