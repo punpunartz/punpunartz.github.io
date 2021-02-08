@@ -287,6 +287,16 @@ color: gray;
 .graphic-row3 {background-color: #f37620;}
 
 
+.comic-punpun-pdf h1 {font-family: 'Passion One',sans-serif;
+                            font-size: 40px;
+                            padding-bottom: 0 px;
+margin-bottom: 4px;}
+
+
+.comic-punpun-pdf p {font-family: 'Raleway', sans-serif;
+font-size: 16px;
+color: gray;
+margin: 0px auto 100px auto;}
 
 
 /*Animation*/
@@ -294,7 +304,7 @@ color: gray;
             .video-row {text-align: center;
                             padding: 100px;}
 
-            .video-row h1, .comic-row1 h1, .comic-row2 h1, .comic-punpun-pdf h1 {font-family: 'Passion One',sans-serif;
+            .video-row h1, .comic-row1 h1, .comic-row2 h1 {font-family: 'Passion One',sans-serif;
                             font-size: 40px;
                             padding-bottom: 20px;}
 
