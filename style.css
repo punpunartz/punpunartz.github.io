@@ -96,7 +96,7 @@ line-height: 16px;}
 
 /*USE % FOR MARGINS AND FOR WIDTHS, NO px*/
 
-@media only screen and (max-width:680px) {
+@media only screen and (max-width:640px) {
   /* For mobile phones: */
     
     
