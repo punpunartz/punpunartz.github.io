@@ -1,0 +1,534 @@
+ 
+/*red= #9b1f2e
+orange= #f37620
+yellow= #fdc516
+lila= #947eba
+pink= #db69a1
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+
+/* Home */
+
+* {box-sizing: border-box;}
+
+            body {margin: 0;}
+
+
+           
+            .header {background-image: url(imagenes/punpun-doodles.png);
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size:cover;
+                height: 70%;
+                text-align: center;
+                padding: 90px;}
+
+     
+
+            .header logo {float: center;}
+
+            .navegation {background-color: #fdc516;
+                        text-align: center;
+                        margin: auto;
+                        padding: 10px;}
+
+            .navegation li {display: inline;
+                        font-family: 'Raleway', sans-serif;
+                        font-weight: bold;
+                       }
+
+            .navegation a {text-decoration: none;
+                            margin: 1%;
+                            color: black;}
+
+
+a:hover {color: #9b1f2e;}
+a:active {color: #947eba}
+
+
+            .home-h1 {font-family: 'Passion One', cursive;
+                        text-align: center;
+                        padding: 10px;
+                        font-size: 2.2vw;
+                        margin: 100px 30px 100px 30px;}
+
+
+.home-info h2 {color: white;
+font-family: 'Raleway', cursive;
+    font-size: 30px;
+text-align: center;
+padding-top: 5px;
+    padding-bottom:5px;
+margin: 0px;
+letter-spacing: 1px}
+
+.home-info p {color: white;
+font-family: 'Raleway', cursive;
+    font-size: 13px;
+text-align: center;
+padding-bottom: 45px;
+margin: 20px 100px 0px 100px;
+line-height: 16px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*THIS IS USED TO ADJUST ANY SIZE OR WIDTH WHEN SCREEN IS SHRUNK TO A MOBILE SCREEN*/
+
+/*USE % FOR MARGINS AND FOR WIDTHS, NO px*/
+
+@media only screen and (max-width:720px) {
+  /* For mobile phones: */
+    
+    
+    
+     .header {background-image: url(imagenes/punpun-doodles.png);
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size:cover;
+                height: 70%;
+                text-align: center;
+                padding: 90px;}
+
+     
+
+            .header logo {float: center;}
+
+            .navegation {background-color: #fdc516;
+                        text-align: center;
+                        margin: auto;
+                        padding: 10px;} .header {background-image: url(imagenes/punpun-doodles.png);
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size:cover;
+                height: 70%;
+                text-align: center;
+                padding: 90px;}
+
+     
+
+            .header logo {float: center;}
+
+            .navegation {background-color: #fdc516;
+                        text-align: center;
+                        margin: auto;
+                        padding: 10px;}
+    
+    
+    
+    
+    .navegation li {width: 100%;}
+    
+    
+  .home-info p {
+    width:100%;
+margin-left: 0px;
+    padding: 0 20px;}
+
+    .home-info h2 {width:100%;}
+    .home-h1 {width: 100%;
+    margin-left: 0px;
+    font-size: 16px;
+    margin-left: 0px;
+    padding: 0 70px;}
+
+    .homegif {width: 500px;
+    margin-left: 0px;}
+    
+    .imagehome div {min-width: 60%;}
+    
+    .about-me p {width:100%;
+    margin: 0%;
+    padding: 0 20px;}
+    
+    
+    .my-work-p0 {width:100%;
+    padding: 0;
+    text-align: center;
+    position: absolute; left: 100px; top: 43%;}
+    
+    .my-work-image1 {width:330%;
+    position: absolute; left: 0%; top: 110%;}
+
+    .my-work {margin-top: 250%;}
+    
+    
+    .my-work h1 {width: 100%;}
+    
+    
+    .my-work-p1 {margin: 0%;
+    padding: 0;
+    width: 100%;
+    text-align:center;
+    position:relative; left: -18%; top: 43%;}
+    
+    .my-work-image2 {width:330%;
+    padding-bottom: 20%;}
+    
+    .my-work-p2 {width:100%;
+    margin-top: 0%;
+    text-align: center;
+   position: absolute; left: 100px; top: 420%;}
+    
+    
+    .my-work-2 h1 {width: 100%;
+    padding-bottom: 200%;}
+    
+    
+    .my-work-image3 {width:250%;
+    position: absolute; left: 0%; top: 510%;}
+    
+ 
+
+
+ 
+ 
+    
+    
+    
+
+
+}
+
+
+
+
+
+
+
+.home-info {background-color: #9b1f2e;
+padding:60px 0px;}
+
+
+            .homegif {padding: 0px;
+                    padding-bottom: 60px;
+                    padding-top: 120px;
+text-align: center;}
+
+
+
+.imagehome {
+  display: flex;
+  
+ width: 100%;
+  flex-wrap: wrap;
+  flex-basis: auto;
+  justify-content: space-evenly;
+}
+
+.imagehome div {
+  flex: 1;
+  padding: 2px;
+  min-width: 33%;
+  box-sizing: border-box;
+}
+
+.img1, .img2, .img3 {
+  
+  padding: 10%;
+float:left;}
+
+.img2 {padding-bottom: 60%;
+padding-top: 0px;}
+
+
+
+
+
+
+
+
+/*About me*/
+
+.about-me {margin-bottom: 180px;}
+
+.about-me p {color: gray;
+font-family: 'Raleway', sans-serif;
+font-size: 14px;
+margin: 0 19.9%;
+padding: 8px 0px;
+line-height: 20px;
+width: 60%;}
+
+.about-me-picture {text-align: center;}
+
+.about-me-h1 {color: black;
+text-align: center;
+font-family: 'Passion One', cursive;
+font-size: 30px;
+    margin: 150px auto 50px auto;}
+
+
+
+
+/*My Work*/
+
+/*GET A PARRAGRAPH BESIDE AN IMAGE:
+-image is in html, no on css
+-parragraph must be float left on css
+*/
+
+
+.my-work-0 h1, .my-work h1, .my-work-2 h1 {color: black;
+text-align: center;
+font-family: 'Passion One', cursive;
+font-size: 50px;
+margin: 150px auto 50px auto;}
+
+
+
+
+.my-work-p0 {margin-top: 6%;
+padding: 5%;
+    padding-bottom: 15%;
+font-size: 20px;
+color: gray;
+font-family: 'Raleway', sans-serif;
+width: 60%;
+float: left;}
+
+ 
+
+.my-work-p1 {margin-top: 8%;
+padding: 5%;
+    padding-bottom: 15%;
+font-size: 20px;
+color: gray;
+font-family: 'Raleway', sans-serif;
+    width: 60%;
+    float: right;}
+
+
+
+
+
+.my-work-p2 {margin-bottom: 0%;
+padding: 5%;
+    padding-bottom: 0%;
+font-size: 20px;
+color: gray;
+font-family: 'Raleway', sans-serif;
+    width: 60%;
+float: left;}
+
+
+.my-work-image3 {padding-top: 5%}
+
+
+
+
+/*Portfolio links*/
+
+
+            .portfolio-links {
+                        text-align: center;
+                        margin: 7%;
+                        padding: 10px;}
+
+
+
+            .portfolio-links li {display: inline;
+                        font-family: 'Passion One', sans-serif;
+                        font-weight: bold;
+                       font-size: 20px;
+                        border-style: solid;
+                        margin-bottom: 1;}
+
+            
+
+            .portfolio-links a {text-decoration: none;
+                            
+                            margin: 0px 15px;
+                            
+                            padding: 0px 50px;
+                            color: black;
+                            width: 50%;}
+
+
+
+
+/*Illustration and Graphic Designs*/
+
+            .column1-0, .column2-0, .column3-0,
+            .column1-a, .column2-a, .column3-a,
+            .column1-b, .column2-b, .column3-b,
+            .column1-c, .column2-c, .column3-c,
+.column1-d, .column2-d, .column3-d,
+.column1-f, .column2-f,
+.column1-e, .column2-e, .column3-e {display: inline;
+                        width: 33.33%; }
+
+.comic1-a, .comic2-a, .comic3-a, .youtube, .instagram, .email {display: inline;
+                        width: 33.33%; }
+
+
+            .column1-0, .column2-0, .column1-a, .column1-b, .column2-b, .column1-c, .column2-c, .column1-d, .column2-d, .column1-e, .column2-e {padding-right: 90px;}
+            .column3-a {padding-left: 80px;}
+            .column1-f {padding-right: 27px;}
+
+            .row0, .row1, .row2, .row3, .row4, .row5, .row6, .comic-row1, .comic-row2, .graphic-row1, .graphic-row2, .graphic-row3, .graphic-row4, .graphic-row5, .graphic-row6 {padding-bottom: 50px;
+                                                                                        padding-top: 50px;}
+
+.graphic-row1 {padding-top: 300px;}
+
+.comic1-b {padding-bottom: 25px;}
+.comic-punpun-pdf {padding-bottom: 200px;}
+
+
+
+.row3 {background-color: #fdc516;}
+.row4 {background-color: #f37620;}
+.row5 {background-color: #9b1f2e;}
+.row6 {background-color: #db69a1;}
+
+
+
+.graphic-row1 h1, .graphic-row4 h1, .row0 h1 {font-family: 'Passion One',sans-serif;
+                    text-align: center;
+                    font-size: 40px;
+                    padding-bottom: 80px;}
+
+.graph1-a, .graph2-a, .graph3-a, .graph4-a {display: inline;
+                                            width: 33.33%;
+                                            padding: 0px 20px;}
+.graph1-b, .graph2-b, .graph3-b, .graph4-b {display: inline;
+                                            width: 33.33%;
+                                            padding: 0px 20px;}
+.graph1-c, .graph2-c, .graph3-c, .graph4-c {display: inline;
+                                            width: 33.33%;
+                                            padding: 0px 20px;}
+.graph1-d, .graph2-d, .graph3-d {display: inline;
+                                            width: 33.33%;
+                                            padding: 0px 20px;}
+.graph1-e, .graph2-e, .graph3-e, .graph1-f {display: inline;
+                                            width: 33.33%;
+                                            padding: 0px 20px;}
+
+
+
+.graph3-e {padding-bottom: 20px;}
+
+.graphic-row2 {background-color: #fdc516;}
+.graphic-row3 {background-color: #f37620;}
+
+
+
+.magazine {display: inline;}
+
+.magazine h1 {font-family: 'Passion One',sans-serif;
+                            font-size: 40px;
+                            padding-bottom: 0px;
+                            margin-bottom: 4px;}
+
+
+
+.comic-punpun-pdf h1 {font-family: 'Passion One',sans-serif;
+                            font-size: 40px;
+                            padding-bottom: 0 px;
+margin-bottom: 4px;}
+
+
+.comic-punpun-pdf p {font-family: 'Raleway', sans-serif;
+font-size: 16px;
+color: gray;
+margin: 0px auto 100px auto;}
+
+/*Animation*/
+
+            .video-row {text-align: center;
+                            padding: 100px;}
+
+            .video-row h1, .comic-row1 h1, .comic-row2 h1 {font-family: 'Passion One',sans-serif;
+                            font-size: 40px;
+                            padding-bottom: 20px;}
+
+            .video1, .video2, .video3 {padding-bottom: 200px;}
+
+
+/* Contact */
+
+
+
+
+
+.social-media h1 {font-family: 'Passion One',sans-serif;
+                    text-align: center;
+                    font-size: 40px;
+                    padding-bottom: 40px;
+                    padding-top: 80px;}
+
+
+.contact-column {float: left;
+                width: 33.33%;
+                padding: 5px;
+                padding-top: 10px;
+                padding-bottom: 80px;
+                height: 300px;} 
+
+
+.social-media:after {content: "";
+                display: table;
+                clear: both;}
+
+.contact-column p {font-size: 20px;
+                    font-family: 'Raleway', sans-serif;
+                    color: gray;
+                    margin: 0px 120px;
+                    padding-top:20px;}
+
+
+
+
+
+
+/* Footer */
+
+                .footer {background-color: #fdc516;
+                    color: black;
+                    text-align:center;
+                    padding:10px;
+                    margin-top: 0%;
+                    background-image: none;
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: bold;
+                   }
+
+ .footer2 {background-color: #fdc516;
+                    color: black;
+                    text-align:center;
+                    padding: 10px;
+                    margin-top: 94px;
+                    background-image: none;
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: bold;
+                   }
+
+
+.footer-work {background-color: #fdc516;
+                    color: black;
+                    text-align:center;
+                    padding:10px;
+                    margin-top: 30%;
+                    background-image: none;
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: bold;
+                   }
