@@ -153,8 +153,6 @@ margin: 3%;}
     
     .home-info p {margin-top: 20px;}
  
-    .center2 {
-        width: 80%;}
     
 }
 
@@ -181,10 +179,8 @@ margin: 3%;}
 }
 
 .center2 {display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 50px;
-        width: 30%;}
+        margin: 50px auto;
+width: 400px;}
 
 .column2 h2 {font-family:'Passion One', cursive;
 font-size:40px;}
