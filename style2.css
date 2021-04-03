@@ -57,6 +57,15 @@ body {margin: 0;}
 
 
 
+
+
+
+
+
+
+
+
+
 .home-h1 {font-family: 'Passion One', cursive;
         text-align: center;
         padding: 1%;
@@ -123,11 +132,7 @@ margin: 3%;}
 
 /*TABLET SIZE*/
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
-.column {
-    width: 100%;}
 
-}
 
 
 
@@ -140,6 +145,7 @@ margin: 3%;}
   .column {
     width: 100%;
   }
+
     
     .home-h1 {font-size: 115%;
     padding: 2% auto;}
@@ -147,6 +153,9 @@ margin: 3%;}
     
     .home-info p {margin-top: 20px;}
  
+    .center2 {
+        width: 80%;}
+    
 }
 
 
@@ -157,6 +166,36 @@ margin: 3%;}
         margin-right: auto;
         margin-top: 50px;
         width: 50%;}
+
+
+
+
+
+/*MY WORK*/
+
+.column2 {
+    text-align: center;
+    margin: 200px auto;
+    width: 100%;
+    height:  /* Should be removed. Only for demonstration */
+}
+
+.center2 {display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        width: 30%;}
+
+.column2 h2 {font-family:'Passion One', cursive;
+font-size:40px;}
+
+.column2 p {margin: 4% 12%;
+font-family:'Raleway', sans-serif;
+font-size: 20px;
+color: darkgray;
+line-height: 24px;}
+
+
 
 
  .footer {background-color: #fdc516;
