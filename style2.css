@@ -133,6 +133,10 @@ margin: 3%;}
 /**************************/
 
 
+/*LAPTOP SIZE*/
+
+
+
 
 /*PHONE SIZE*/
 
@@ -143,7 +147,7 @@ margin: 3%;}
     .navegation li {
         font-size: 12px;}
     
-    .column {
+    .column, {
     width: 100%;
   }
 
@@ -213,6 +217,28 @@ font-family:'Raleway', sans-serif;
 font-size: 20px;
 color: gray;
 line-height: 24px;}
+
+
+
+
+
+
+
+/*Contact*/
+
+.column3 {
+    text-align: center;
+    padding-bottom: 20px;
+    float: left;
+    width: 33.33%;}
+
+.center3 {display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        width: 50%;}
+
+
 
 
 
