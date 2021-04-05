@@ -226,17 +226,39 @@ line-height: 24px;}
 
 /*Contact*/
 
+
+
 .column3 {
     text-align: center;
     padding-bottom: 20px;
     float: left;
-    width: 33.33%;}
+    width: 33.33%;
+}
+
+
+.contact-h1 {font-family: 'Passion One', cursive;
+font-size: 50px;
+    text-align: center;
+padding-top: 8%;}
+
+.column3 p {font-family: 'Raleway', cursive;
+color: gray;
+margin: 5% 20%;}
+
+
+.contact-column:after {
+content: "";
+  display: table;
+  clear: both;
+}
+
 
 .center3 {display: block;
         margin-left: auto;
         margin-right: auto;
         margin-top: 50px;
         width: 50%;}
+
 
 
 
