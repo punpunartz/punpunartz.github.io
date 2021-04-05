@@ -22,8 +22,9 @@ $phone: 480px; // sm
 body {margin: 0;}
 
 
+
            
-            .header {background-image: url(imagenes/punpun-doodles.png);
+.header {background-image: url(imagenes/punpun-doodles.png);
                 background-position: top;
                 background-repeat: no-repeat;
                 background-size:cover;
@@ -33,34 +34,28 @@ body {margin: 0;}
                 opacity: ;}
 }
 
-            #logo {float: center;}
+#logo {float: center;}
 
 
 
-            .navegation ul {background-color: #fdc516;
-                        text-align: center;
-                        margin: auto;
-                        padding: 20px;}
+.navegation ul {background-color: #fdc516;
+                text-align: center;
+                margin: auto;
+                padding: 20px;}
 
-            .navegation li {display: inline;
-                        font-family: 'Raleway', sans-serif;
+.navegation li {display: inline;
+                font-family: 'Raleway', sans-serif;
+                font-size: 16px;
                 font-weight: bold;}
                        
 
-            .navegation a {text-decoration: none;
-                            margin: 1%;
-                            color: black;}
+.navegation a {text-decoration: none;
+                margin: 1%;
+                color: black;}
 
 
-            a:hover {color: #9b1f2e}
-            a:active {color: #947eba}
-
-
-
-
-
-
-
+a:hover {color: #9b1f2e}
+a:active {color: #947eba}
 
 
 
@@ -98,8 +93,6 @@ margin-bottom: 60px;}
 
 
 
-
-
 /* Create three equal columns that floats next to each other */
 .column {
     text-align: center;
@@ -114,9 +107,8 @@ margin-bottom: 60px;}
 }
 
 .column p {font-family: 'Raleway', cursive;
-color: darkgrey;
+color: gray;
 margin: 3%;}
-
 
 
 /* Clear floats after the columns */
@@ -126,23 +118,32 @@ margin: 3%;}
   clear: both;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+.center {display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        width: 50%;}
 
 
 
-/*TABLET SIZE*/
 
 
 
-
-
+/**************************/
 
 
 
 /*PHONE SIZE*/
 
 @media screen and (max-width: 480px) {
-  .column {
+      
+    
+    
+    .navegation li {
+        font-size: 12px;}
+    
+    .column {
     width: 100%;
   }
 
@@ -156,14 +157,36 @@ margin: 3%;}
     
 }
 
+/**************************/
 
 
 
-.center {display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 50px;
-        width: 50%;}
+
+
+
+/*ABOUT ME*/
+
+
+.about-me {margin-bottom: 180px;}
+
+.about-me p {color: gray;
+font-family: 'Raleway', sans-serif;
+font-size: 14px;
+margin: 0 19.9%;
+padding: 8px 0px;
+line-height: 20px;
+width: 60%;
+text-align: justify;}
+
+.about-me-picture {text-align: center;}
+
+.about-me-h1 {color: black;
+text-align: center;
+font-family: 'Passion One', cursive;
+font-size: 30px;
+    margin: 150px auto 50px auto;}
+
+
 
 
 
@@ -188,8 +211,13 @@ font-size:40px;}
 .column2 p {margin: 4% 12%;
 font-family:'Raleway', sans-serif;
 font-size: 20px;
-color: darkgray;
+color: gray;
 line-height: 24px;}
+
+
+
+
+
 
 
 
