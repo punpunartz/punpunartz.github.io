@@ -521,14 +521,16 @@ margin: 0px auto 100px auto;}
                     font-weight: bold;
                    }
 
+
  .footer2 {background-color: #fdc516;
                     color: black;
                     text-align:center;
-                    padding: 10px;
-                    margin-top: 94px;
+                    padding: 10px 0px;
                     background-image: none;
                     font-family: 'Raleway', sans-serif;
                     font-weight: bold;
+                    font-size: 12px;
+                    line-height: 4px;
                    }
 
 .footer {background-color: #fdc516;
