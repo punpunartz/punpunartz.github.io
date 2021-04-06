@@ -19,35 +19,38 @@ pink= #db69a1
             body {margin: 0;}
 
 
-           
-            .header {background-image: url(imagenes/punpun-doodles.png);
+             
+.header {background-image: url(imagenes/punpun-doodles.png);
                 background-position: top;
                 background-repeat: no-repeat;
                 background-size:cover;
                 height: 70%;
                 text-align: center;
-                padding: 90px;}
+                padding: 8%;
+                opacity: ;}
+}
 
-     
-
-            .header logo {float: center;}
-
-            .navegation {background-color: #fdc516;
-                        text-align: center;
-                        margin: auto;
-                        padding: 10px;}
-
-            .navegation li {display: inline;
-                        font-family: 'Raleway', sans-serif;
-                        font-weight: bold;
-                       }
-
-            .navegation a {text-decoration: none;
-                            margin: 1%;
-                            color: black;}
+#logo {float: center;}
 
 
-a:hover {color: #9b1f2e;}
+
+.navegation ul {background-color: #fdc516;
+                text-align: center;
+                margin: auto;
+                padding: 20px;}
+
+.navegation li {display: inline;
+                font-family: 'Raleway', sans-serif;
+                font-size: 16px;
+                font-weight: bold;}
+                       
+
+.navegation a {text-decoration: none;
+                margin: 1%;
+                color: black;}
+
+
+a:hover {color: #9b1f2e}
 a:active {color: #947eba}
 
 
