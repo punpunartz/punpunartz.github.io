@@ -4,7 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact</title>
-   <link rel="stylesheet" href="style2.css">
+   <style>
+
+       @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+{box-sizing: border-box;}
+body {margin: 0;}
+       
+       
+          
+.header {background-image: url(imagenes/punpun-doodles.png);
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size:cover;
+                height: 70%;
+                text-align: center;
+                padding: 8%;
+                opacity: ;}
+}
+
+#logo {float: center;}
+
+
+
+.navegation ul {background-color: #fdc516;
+                text-align: center;
+                margin: auto;
+                padding: 20px;}
+
+.navegation li {display: inline;
+                font-family: 'Raleway', sans-serif;
+                font-size: 16px;
+                font-weight: bold;}
+                       
+
+.navegation a {text-decoration: none;
+                margin: 1%;
+                color: black;}
+
+
+a:hover {color: #9b1f2e}
+a:active {color: #947eba}
+       
+       
+
+.contact-h1 {font-family: 'Passion One', cursive;
+font-size: 50px;
+    text-align: center;
+padding-top: 8%;}
+
+
+.column {
+    text-align: center;
+    padding-bottom: 20px;
+    float: left;
+    width: 33.33%;
+    height: ; 
+}
+
+
+.column h2 {font-family: 'Passion One', cursive;
+}
+
+.column p {font-family: 'Raleway', cursive;
+color: gray;
+margin: 3%;}
+
+.row-home:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.center {display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        width: 33.33%;}
+
+ .footer {background-color: #fdc516;
+                    color: black;
+                    text-align:center;
+                    padding: 10px 0px;
+                    margin-top: 8%;
+                    background-image: none;
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 4px;
+                   } 
+       
+/*PHONE SIZE*/
+
+@media screen and (max-width: 640px) {
+      
+    
+    
+    .navegation li {
+        font-size: 12px;}
+    
+    .column {
+    width: 100%;
+  }
+
+    
+    .home-h1 {font-size: 115%;
+    padding: 2% auto;}
+    
+    
+    .home-info p {margin-top: 20px;}
+    
+    .about-me p {width: 100%;
+    font-size: 200%;}   
+}
+
+/**************************/       
+    
+</style>
     
     
     </head>
@@ -27,27 +145,28 @@
         
         
         <h1 class="contact-h1">Contact me!</h1>
-        
-<div class="contact-column">
-  <div class="column3" style="background-color:#fff;">
-      <a href="https://www.youtube.com/channel/UCktCD2w2sGtgmx38X9Kzvmw?view_as=subscriber"><img src="imagenes/GIF/youtube-gif.gif" style="width: 33.33%" alt="YouTube" class="center3"></a>
+<div class="row-home">
+  <div class="column" style="background-color:#fff;">
+      <a href="https://www.youtube.com/channel/UCktCD2w2sGtgmx38X9Kzvmw?view_as=subscriber">
+    <img src="imagenes/GIF/youtube-gif.gif" alt="YouTube" class="center"></a>
+    <h2>YouTube</h2>
     <p>Visit my YouTube Channel for more animations!</p>
   </div>
-  <div class="column3" style="background-color:#fff;">
-       <a href="https://www.instagram.com/punpunartz/"><img src="imagenes/GIF/insta-gif.gif" style="width: 33.33%" alt="Instagram" class="center3"></a>
+  <div class="column" style="background-color:#fff;">
+      <a href="https://www.instagram.com/punpunartz/">
+    <img src="imagenes/GIF/insta-gif.gif" alt="Instagram" class="center"></a>
+    <h2>Instagram</h2>
     <p>Follow me on Instagram for more drawings!</p>
   </div>
-  <div class="column3" style="background-color:#fff;">
-   <a href="mailto:punpunartz@gmail.com"><img src="imagenes/GIF/gmail-gif.gif" alt="Gmail" style="width: 33.33%" class="center3"></a>
-      <p>Send me an email to punpunartz@gmail.com so I can reach out to you!</p>
-  </div>        
-     </div>
+  <div class="column" style="background-color:#fff;">
+      <a href="mailto:punpunartz@gmail.com">
+    <img src="imagenes/GIF/gmail-gif.gif" alt="Gmail" class="center"></a>
+    <h2>Email</h2>
+    <p>Send me an email to punpunartz@gmail.com so I can reach out to you!</p>
+  </div>
+        </div>
     
-        
-        
-        
-   
-        
+      
             
         <div class="footer"><p>PunPunArtz • Nichole Ramos León</p>
             <p>Copyright © 2021</p></div>
