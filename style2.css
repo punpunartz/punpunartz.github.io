@@ -159,7 +159,8 @@ margin: 3%;}
     .home-info p {margin-top: 20px;}
     
     .about-me p {width: 100%;
-    font-size: 200%;}
+    font-size: 200%;
+           margin: 6% 19.9%;}
     
   
  
@@ -181,7 +182,7 @@ margin: 3%;}
 .about-me p {color: gray;
 font-family: 'Raleway', sans-serif;
 font-size: 90%;
-margin: 6% 19.9%;
+margin: 2% 19.9%;
 padding: 8px 0px;
 line-height: 20px;
 width: 60%;
