@@ -38,7 +38,8 @@ body {margin: 0;}
 
 
 
-.navegation ul {background-color: #fdc516;
+
+.navegation ul {background-color: black;
                 text-align: center;
                 margin: auto;
                 padding: 20px;}
@@ -51,10 +52,10 @@ body {margin: 0;}
 
 .navegation a {text-decoration: none;
                 margin: 1%;
-                color: black;}
+                color: white;}
 
 
-a:hover {color: #9b1f2e}
+a:hover {color: #fdc516}
 a:active {color: #947eba}
 
 
