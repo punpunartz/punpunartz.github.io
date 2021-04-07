@@ -32,22 +32,24 @@ pink= #db69a1
 
             .header logo {float: center;}
 
-            .navegation ul {background-color: #fdc516;
-                        text-align: center;
-                        margin: auto;
-                        padding: 20px;}
+       
+.navegation ul {background-color: black;
+                text-align: center;
+                margin: auto;
+                padding: 20px;}
 
-            .navegation li {display: inline;
-                        font-family: 'Raleway', sans-serif;
-                        font-weight: bold;
-                       font-size: 16px;}
+.navegation li {display: inline;
+                font-family: 'Raleway', sans-serif;
+                font-size: 16px;
+                font-weight: bold;}
+                       
 
-            .navegation a {text-decoration: none;
-                            margin: 1%;
-                            color: black;}
+.navegation a {text-decoration: none;
+                margin: 1%;
+                color: white;}
 
 
-a:hover {color: #9b1f2e}
+a:hover {color: #fdc516}
 a:active {color: #947eba}
 
 
