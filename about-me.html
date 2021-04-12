@@ -4,26 +4,330 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About Me</title>
-   <link rel="stylesheet" href="style2.css">
     
+    
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+/*red= #9b1f2e
+orange= #f37620
+yellow= #fdc516
+lila= #947eba
+pink= #db69a1
+*/
+
+
+
+$desktop: 1200px; // col-xl
+$laptop: 992px;// col-lg
+$tablet: 768px; // md
+$phone: 480px; // sm
+
+
+
+{box-sizing: border-box;}
+body {margin: 0;}
+
+
+/*PHONE MENU*/
+
+
+
+
+.container {
+	position: relative;
+	padding: 100px;
+}
+
+nav {
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0 10%;
+    margin-top: 128px;
+	height: 54px;
+	background-color: black;
+}
+
+
+
+@media(min-width: 768px) {
+    
+.headerlogo {background-color: black;}    
+    
+    
+nav {
+    position:absolute;}
+    
+    #nav-toggle {
+	position: absolute;
+	top: -200px;
+}
+}
+
+nav .logo {
+	float: left;
+	width: 40%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	font-size: 24px;
+	color: #fff;
+}
+nav .links {
+
+    text-align:center;
+}
+nav .links li {
+	    display:inline;
+   
+    padding: 0 10px;
+}
+nav .links a {
+
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display:inline-block;
+    padding: 0;
+}
+
+
+
+a:hover {color: #fdc516}
+a:active {color: #947eba}
+
+@media screen and (max-width: 768px) {
+        
+.headerlogo {display: none;}    
+    
+    nav {background-image: url(imagenes/PunPunArtz-Logo-White.png);
+        background-position: top;
+                background-repeat: no-repeat;
+        background-size:contain;
+                
+    top: -128px;}
+    
+    
+    nav .links {
+	
+	
+	margin: 0;
+	width: 500px;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+nav .links li {
+	list-style: none;
+}
+nav .links a {
+
+	padding: ;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    
+    
+}
+    
+
+
+    
+    #nav-toggle {
+	position: absolute;
+	top: -100px;
+}
+nav .icon-burger {
+	display: none;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+nav .icon-burger .line {
+	width: 30px;
+	height: 5px;
+	background-color: #fff;
+	margin: 5px;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+}
+    
+    
+	nav .logo {
+		float: none;
+		width: auto;
+		justify-content: center;
+	}
+	nav .links {
+		float: none;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 54px;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: rgba(0,0,0,.8);
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+        font-family: 'Raleway', sans-serif;
+	}
+	nav .links a {
+		font-size: 20px;
+        font-family: 'Raleway', sans-serif;
+	}
+	nav :checked ~ .links {
+		bottom: 0;
+	}
+	nav .icon-burger {
+		display: block;
+	}
+	nav :checked ~ .icon-burger .line:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(2) {
+		opacity: 0;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+/**************************/
+
+
+/*LAPTOP SIZE*/
+
+
+
+
+/*PHONE SIZE*/
+
+@media screen and (max-width: 768px) {
+      
+    .header {padding-top: 22%;} 
+
+    
+    .column {
+    width: 100%;
+  }
+
+    
+    .home-h1 {font-size: 115%;
+    padding: 2% auto;}
+    
+    
+    .home-info p {margin-top: 20px;}
+    
+    .about-me p {width: 100%;
+    font-size: 200%;
+    margin: 6% 19.9%;}
+    
+  
+ 
+    
+}
+
+/**************************/
+
+
+
+
+
+
+/*ABOUT ME*/
+
+
+.about-me {margin-bottom: 180px;}
+
+.about-me p {color: gray;
+font-family: 'Raleway', sans-serif;
+font-size: 90%;
+margin: 2% 19.9%;
+padding: 8px 0px;
+line-height: 20px;
+width: 60%;
+text-align: justify;}
+
+.about-me-picture {text-align: center;}
+
+.about-me-h1 {color: black;
+text-align: center;
+font-family: 'Passion One', cursive;
+font-size: 30px;
+    margin: 150px auto 50px auto;}
+
+
+
+
+ .footer {background-color: #fdc516;
+                    color: black;
+                    text-align:center;
+                    padding: 10px 0px;
+                    margin-top: 60px;
+                    background-image: none;
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 4px;
+                   }
+    </style>
     
     </head>
     
     <body>
     
         
-   
-        
-        
-        <div class="navegation">
-            <ul>
-             <li><a href="index.html" class="on">Home</a> </li>
+   <center><div class="headerlogo">
+    <img src="imagenes/PunPunArtz-Logo-web.png" width="150" height="150">   
+       </div></center>
+       
+       
+      <nav>
+	<input id="nav-toggle" type="checkbox">
+
+	<ul class="links">
+		          <li><a href="index.html" class="on">Home</a> </li>
                 <li><a href="about-me.html">About Me</a></li>
                 <li><a href="my-work.html">My Work</a></li>
                 <li><a href="portfolio-graphic-designs.html">Portfolio</a></li>
-                <li><a href="https://punpunartz.wixsite.com/contact">Contact</a></li>
-            </ul>
-                </div>
+                <li><a href="contact.html">Contact</a></li>
+	</ul>
+	<label for="nav-toggle" class="icon-burger">
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+	</label>
+</nav>
         
         <div class="about-me-h1"><h1>Who am I?</h1></div>
         
