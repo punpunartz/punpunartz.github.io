@@ -1,182 +1,454 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio - Graphic Designs</title>
-   <link rel="stylesheet" href="style.css">
+    
+    <head>
+         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Portfolio - Graphic Designs</title>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+/*red= #9b1f2e
+orange= #f37620
+yellow= #fdc516
+lila= #947eba
+pink= #db69a1
+*/
+
+
+
+$desktop: 1200px; // col-xl
+$laptop: 992px;// col-lg
+$tablet: 768px; // md
+$phone: 480px; // sm
+
+
+
+{box-sizing: border-box;}
+body {margin: 0;}
+
+
+/*PHONE MENU*/
+
+.container {
+	position: relative;
+	padding: 100px;
+}
+
+nav {
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: -128px;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0 10%;
+    margin-top: 128px;
+	height: 54px;
+	background-color: black;
+}
+
+
+
+@media(min-width: 768px) {
+    
+.headerlogo {background-color: black;}    
     
     
+nav {
+    position:absolute;
+   }
+    
+    #nav-toggle {
+	position: absolute;
+	top: -200px; 
+}
+}
+
+nav .logo {
+	float: left;
+	width: 40%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	font-size: 24px;
+	color: #fff;
+}
+nav .links {
+
+    text-align:center;
+}
+nav .links li {
+	    display:inline;
+   margin-right: 34px;
+    padding: 0px;
+}
+nav .links a {
+
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display:inline-block;
+    padding: 0;
+}
+
+
+
+nav a:hover {color: #fdc516}
+nav a:active {color: #947eba}
+
+@media screen and (max-width: 768px) {
+        
+.headerlogo {display: none;}    
+    
+    nav {background-image: url(imagenes/PunPunArtz-Logo-White.png);
+        background-position: top;
+                background-repeat: no-repeat;
+        background-size:contain;
+                
+    top: -128px;}
+    
+    
+    nav .links {
+	
+	
+	margin: 0;
+	width: 500px;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+nav .links li {
+	list-style: none;
+    
+}
+nav .links a {
+
+	padding: ;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    
+    
+}
+    
+nav a:hover {color: #fdc516}
+nav a:active {color: #947eba}
+
+    
+    #nav-toggle {
+	position: absolute;
+	top: -100px;
+}
+nav .icon-burger {
+	display: none;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+nav .icon-burger .line {
+	width: 30px;
+	height: 5px;
+	background-color: #fff;
+	margin: 5px;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+}
+    
+    
+	nav .logo {
+		float: none;
+		width: auto;
+		justify-content: center;
+	}
+	nav .links {
+		float: none;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 54px;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: rgba(0,0,0,.8);
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+        font-family: 'Raleway', sans-serif;
+	}
+	nav .links a {
+		font-size: 20px;
+        font-family: 'Raleway', sans-serif;
+	}
+	nav :checked ~ .links {
+		bottom: 0;
+	}
+	nav .icon-burger {
+		display: block;
+	}
+	nav :checked ~ .icon-burger .line:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(2) {
+		opacity: 0;
+	}
+	
+}
+
+
+
+
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+    text-align: center;
+    padding-bottom: 0%;
+    float: left;
+    width: 25%;
+    height:  /* Should be removed. Only for demonstration */
+}
+            
+ .column2 {
+  float: left;
+  width: 42.4%;
+  padding: 0% 3.8%;
+ /* Should be removed. Only for demonstration */
+}           
+
+
+.column h2 {font-family: 'Passion One', cursive;
+}
+
+.column p {font-family: 'Raleway', cursive;
+color: gray;
+margin: 3%;}
+
+
+/* Clear floats after the columns */
+.row-home:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+          
+            
+.center {display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        width: 50%;}
+
+.center2 {display: block;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top: 50px;
+    }
+
+
+            
+            
+.nav-portfolio {
+ padding-top: 10%;
+padding-bottom: 5%;
+    text-align: center;
+            }            
+            
+.nav-portfolio li {
+     display: inline;
+    list-style: none;
+            }     
+            
+.nav-portfolio a {
+    text-decoration: none;
+    margin: 0% 1%;
+    color: black;
+    font-family: 'Passion One', cursive;
+    font-size: 25px;
+    border-color: black;
+    border-style: solid;
+    padding: 5px 50px;
+            }
+            
+.nav-portfolio a:hover {color: #f37620}
+.nav-portfolio a:active {color: #fdc516}            
+
+
+/**************************/
+
+
+
+/*PHONE SIZE*/
+
+@media screen and (max-width: 768px) {
+      
+    .header {padding-top: 22%;} 
+
+    
+    .column {
+    width: 100%;
+  }
+
+    .column2 {
+        width: 70%;
+    padding-left: 15%;}
+    
+    .home-h1 {font-size: 115%;
+    padding: 2% auto;}
+    
+    
+    .home-info p {margin-top: 20px;}
+    
+    .about-me p {width: 100%;
+    font-size: 200%;
+    margin: 6% 19.9%;}
+    
+      .nav-portfolio li {
+        display: block;
+        margin: 2.9%;
+        padding-right:10%;
+         position:relative;
+        top: 36px;
+    }  
+       
+    
+}
+
+/**************************/
+
+
+   @media screen and (max-width: 1100px) and (min-width: 768px) { 
+       
+     .nav-portfolio li {
+        display: block;
+        margin: 2.9%;
+        padding-right:10%;
+         position:relative;
+        top: 12px;
+    }  
+   }
+            
+            
+            
+
+ .footer {background-color: #fdc516;
+                    color: black;
+                    text-align:center;
+                    padding: 10px 0px;
+                    margin-top: 60px;
+                    background-image: none;
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 4px;
+                   }
+        
+        </style>
+        
     </head>
     
-    <body>
     
+    
+    
+    
+    
+    
+    
+    <body>
 
-        
-        <div class="navegation">
-            <ul>
-        <li><a href="index.html" class="on">Home</a> </li>
+        <nav>
+	<input id="nav-toggle" type="checkbox">
+
+	<ul class="links">
+		          <li><a href="index.html" class="on">Home</a> </li>
                 <li><a href="about-me.html">About Me</a></li>
                 <li><a href="my-work.html">My Work</a></li>
                 <li><a href="portfolio-graphic-designs.html">Portfolio</a></li>
                 <li><a href="https://punpunartz.wixsite.com/contact">Contact</a></li>
-            </ul>
-                </div>
+	</ul>
+	<label for="nav-toggle" class="icon-burger">
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+	</label>
+</nav>
+
+        <div class="nav-portfolio">
+        <ul class="links">
+		          <li><a href="portfolio-graphic-designs.html" class="on">Graphic Designs</a> </li>
+                <li><a href="#">Illustrations</a></li>
+                <li><a href="#">Comics</a></li>
+                <li><a href="#">Animations</a></li>
+	</ul>
+        </div>
         
 
-       <center>
-            <div class="portfolio-links">
-        <ul>
-            <li><a href="portfolio-graphic-designs.html" style="color: #f37620">Graphic Designs</a></li>
-            <li><a href="portfolio-illustrations.html">Illustrations</a></li>
-            <li><a href="portfolio-comics.html">Comics</a></li> 
-            <li><a href="portfolio-animations.html">Animations</a></li>
-               
-                </ul>
-           </div>
-            
-                
-              
-           <div class="graphic-row4">
-               
-               <h1> Logos, Shirt, and Brand Book</h1>
-                  <div class="graph1-d">
-      <a target="_blank" href="imagenes/Mock-ups/ER-mockup.jpg">
-    <img src="imagenes/Mock-ups/ER-mockup.jpg" alt="ER logo" style="width:22%">
-          </a>
+        
+        
+        
+        <div class="row-home">
+  <div class="column" style="background-color:#fff;">
+      <a href="portfolio-graphic-designs.html"><img src="imagenes/Mock-ups/T-Shirt%20Mockup%20Template.jpg" class="center" style="width: 70%"></a>
+  
   </div>
-  <div class="graph2-d">
-      <a target="_blank" href="imagenes/Mock-ups/PunPunArtz%20pin%20mockup.jpg">
-    <img src="imagenes/Mock-ups/PunPunArtz%20pin%20mockup.jpg" alt="PunPunArtz" style="width:23.5%">
-          </a>
+  <div class="column" style="background-color:#fff;">
+      <a href="portfolio-illustrations.html"><img src="imagenes/rainydays.jpg" class="center" style="width: 70%"></a>
+  
   </div>
-  <div class="graph3-d">
-      <a target="_blank" href="imagenes/Mock-ups/Grocery-Meet-Logo-Mockup.jpg">
-    <img src="imagenes/Mock-ups/Grocery-Meet-Logo-Mockup.jpg" alt="Grocery Meet Logo" style="width:24%">
-          </a>
+  <div class="column" style="background-color:#fff;">
+      <a href="portfolio-comics.html"><img src="imagenes/insta-comic.jpg" class="center" style="width: 70%"></a>
+  
   </div>
-           </div>
-           
-           <div class="graphic-row5">
-                  <div class="graph1-e">
-      <a target="_blank" href="imagenes/Mock-ups/Free%20Brand%20Business%20Cards%20Mockup%20PSD%20For%20Presentation.jpg">
-    <img src="imagenes/Mock-ups/Free%20Brand%20Business%20Cards%20Mockup%20PSD%20For%20Presentation.jpg" alt="PunPunimations" style="width:26.2%">
-          </a>
+    <div class="column" style="background-color:#fff;">
+        <a href="portfolio-animations.html"><img src="imagenes/Punpunimations-Logo.jpg" class="center" style="width: 70%"></a>
+  
   </div>
-  <div class="graph2-e">
-      <a target="_blank" href="imagenes/Mock-ups/small-bilboard-front-mockup.jpg">
-    <img src="imagenes/Mock-ups/small-bilboard-front-mockup.jpg" alt="Bilboard" style="width:24.4%">
-          </a>
+</div>
+        
+        
+        
+          
+        <div class="row-home">
+  <div class="column2" style="background-color:#fff;">
+      <a href="portfolio-graphic-designs.html"><img src="imagenes/Mock-ups/T-Shirt%20Mockup%20Template.jpg" class="center2" style="width: 100%"></a>
+  
   </div>
-  <div class="graph3-e">
-      <a target="_blank" href="imagenes/Mock-ups/T-Shirt%20Mockup%20Template.jpg">
-    <img src="imagenes/Mock-ups/T-Shirt%20Mockup%20Template.jpg" alt="PunPun T-shirt" style="width:19.5%">
-          </a>
-               </div>
-           </div>
-           
-      <div class="graphic-row6">
-               <div class="graph1-f">
-      <a target="_blank" href="imagenes/Mock-ups/Isometric-Square-Hardcover-Book-Mockup.jpg">
-    <img src="imagenes/Mock-ups/Isometric-Square-Hardcover-Book-Mockup.jpg" alt="Brand book" style="width:76%">
-          </a>
+  <div class="column2" style="background-color:#fff;">
+      <a href="portfolio-illustrations.html"><img src="imagenes/rainydays.jpg" class="center2" style="width: 100%"></a>
+  
   </div>
-      
-  </div>
+</div>
+        
          
-           
-         <div class="magazine">
-               
-               <h1>Magazine AnimaFast</h1>
-              
-                   <a href="https://issuu.com/punpunartz/docs/revista_for_issuu">
-<img src="imagenes/Revista-portada-issuu.png" alt="Magazine AnimaFast" style="width:30%">
-                    </a>
-           
-           </div>   
-           
-           
-           
-       
-           <div class="graphic-row1">
-               
-               
-               <h1>AECOM Activities</h1>
-                  <div class="graph1-a">
-      <a target="_blank" href="imagenes/Cursos%20COMU%20Depa.jpg">
-    <img src="imagenes/Cursos%20COMU%20Depa.jpg" alt="Comu" style="width:20%">
-          </a>
-  </div>
-  <div class="graph2-a">
-      <a target="_blank" href="imagenes/ExpresArte-Challenge-Agenda-Aclaratoria.png">
-    <img src="imagenes/ExpresArte-Challenge-Agenda-Aclaratoria.png" alt="AECOM challenge" style="width:26%">
-          </a>
-  </div>
-  <div class="graph3-a">
-      <a target="_blank" href="imagenes/Nominaciones-Representantes-estudiantiles-Depa.png">
-    <img src="imagenes/Nominaciones-Representantes-estudiantiles-Depa.png" alt="Comu" style="width:20%">
-          </a>
-  </div>
-               <div class="graph4-a">
-      <a target="_blank" href="imagenes/Cortometraje-de-1-minuto-promo.png">
-    <img src="imagenes/Cortometraje-de-1-minuto-promo.png" alt="AECOM event" style="width:15.5%">
-          </a>
-  </div>
-           </div>
-                
-                <div class="graphic-row2">
-                  <div class="graph1-b">
-      <a target="_blank" href="imagenes/Iniciacion%20exitosa.jpg">
-    <img src="imagenes/Iniciacion%20exitosa.jpg" alt="AECOM success" style="width:26%">
-          </a>
-  </div>
-  <div class="graph2-b">
-      <a target="_blank" href="imagenes/Ilustraci%C3%B3n-de-Personajes-Promo-4.jpg">
-    <img src="imagenes/Ilustraci%C3%B3n-de-Personajes-Promo-4.jpg" alt="AECOM character illustrations" style="width:15.5%">
-          </a>
-  </div>
-  <div class="graph3-b">
-      <a target="_blank" href="imagenes/Taller-4-grandioso.jpg">
-    <img src="imagenes/Taller-4-grandioso.jpg" alt="4th event" style="width:20%">
-          </a>
-  </div>
-               <div class="graph4-b">
-      <a target="_blank" href="imagenes/Taller-1-Rosa-Colon.jpg">
-    <img src="imagenes/Taller-1-Rosa-Colon.jpg" alt="AECOM 1st event" style="width:26%">
-          </a>
-  </div>
-           </div>
-      
-           <div class="graphic-row3">
-                  <div class="graph1-c">
-      <a target="_blank" href="imagenes/Taller-Espectacular.jpg">
-    <img src="imagenes/Taller-Espectacular.jpg" alt="AECOM great event" style="width:20%">
-          </a>
-  </div>
-  <div class="graph2-c">
-      <a target="_blank" href="imagenes/3er%20taller%20AECOM%202020%202.jpg">
-    <img src="imagenes/3er%20taller%20AECOM%202020%202.jpg" alt="AECOM activity" style="width:20%">
-          </a>
-  </div>
-  <div class="graph3-c">
-      <a target="_blank" href="imagenes/4to-taller-2020.jpg">
-    <img src="imagenes/4to-taller-2020.jpg" alt="AECOM 4th event" style="width:20%">
-          </a>
-  </div>
-               <div class="graph4-c">
-      <a target="_blank" href="imagenes/ExpresArte-Challenge-Agenda-2.jpg">
-    <img src="imagenes/ExpresArte-Challenge-Agenda-2.jpg" alt="AECOM agenda" style="width:15.5%">
-          </a>
-  </div>
-           </div>
+     
         
-           
-           
-</center>
+         
+        <div class="footer"><p>PunPunArtz • Nichole Ramos León</p>
+            <p>Copyright © 2021</p></div>
         
-            
-            <div class="footer2"><p>PunPunArtz • Nichole Ramos León</p>
-                <p>Copyright © 2021</p></div>
-       
+        
+ 
+        
+        
+        
     </body>
-    </html>
+    
+</html>
