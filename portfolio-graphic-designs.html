@@ -82,9 +82,17 @@ nav .links {
 }
 nav .links li {
 	    display:inline;
-   margin-right: 34px;
-    padding: 0px;
+   margin-right: 29px;
+    padding-right: 1%;
 }
+        
+        @media screen and (max-width: 820px){        
+nav .links li {
+	    display:inline;
+   margin-right: 29px;
+    padding-right: 0%;
+}
+        }
 nav .links a {
 
 	font-size: 16px;
@@ -216,20 +224,21 @@ nav .icon-burger .line {
 
 
 
-/* Create three equal columns that floats next to each other */
+
 .column {
     text-align: center;
-    padding-bottom: 0%;
+   
     float: left;
     width: 25%;
-    height:  /* Should be removed. Only for demonstration */
+   
 }
             
  .column2 {
   float: left;
-  width: 42.4%;
-  padding: 0% 3.8%;
- /* Should be removed. Only for demonstration */
+  width: 47.6%;
+  padding: 0% 1.2%;
+     padding-top: 1.8%;
+ 
 }           
 
 
@@ -249,6 +258,14 @@ margin: 3%;}
   
 }
 
+
+.row-home h1 {
+     font-family: 'Passion One', cursive;
+    font-size: 48px;
+    text-align: center;
+    padding: 50px;
+    padding-top: 200px;
+            }            
           
             
 .center {display: block;
@@ -260,7 +277,7 @@ margin: 3%;}
 .center2 {display: block;
         margin-left:auto;
         margin-right:auto;
-        margin-top: 50px;
+        margin-top: 30px;
     }
 
 
@@ -279,13 +296,13 @@ padding-bottom: 5%;
             
 .nav-portfolio a {
     text-decoration: none;
-    margin: 0% 1%;
+    margin-left: 4%;
     color: black;
     font-family: 'Passion One', cursive;
     font-size: 25px;
     border-color: black;
     border-style: solid;
-    border-width: 3.5px;
+    border-width: 2.7px;
     padding: 4.2px 50px;
             }
             
@@ -296,6 +313,19 @@ padding-bottom: 5%;
 /**************************/
 
 
+ @media screen and (min-width: 1100px) {
+   .nav-portfolio a {
+       margin-left: 0%;
+     margin-right: 2%;}             
+                
+                
+            }           
+            
+            
+            
+            
+            
+            
 
 /*PHONE SIZE*/
 
@@ -305,12 +335,16 @@ padding-bottom: 5%;
 
     
     .column {
-    width: 100%;
+    width: 78%;
+    padding-left: 11%;
+    
   }
 
     .column2 {
         width: 70%;
-    padding-left: 15%;}
+    padding-left: 15%;
+    padding-top: 4%;
+    }
     
     .home-h1 {font-size: 115%;
     padding: 2% auto;}
@@ -391,6 +425,7 @@ padding-bottom: 5%;
                 <li><a href="about-me.html">About Me</a></li>
                 <li><a href="my-work.html">My Work</a></li>
                 <li><a href="portfolio-graphic-designs.html">Portfolio</a></li>
+                <li><a href="resume.html">Resume</a></li>
                 <li><a href="https://punpunartz.wixsite.com/contact">Contact</a></li>
 	</ul>
 	<label for="nav-toggle" class="icon-burger">
@@ -403,9 +438,9 @@ padding-bottom: 5%;
         <div class="nav-portfolio">
         <ul class="links">
 		          <li><a href="portfolio-graphic-designs.html" class="on">Graphic Designs</a> </li>
-                <li><a href="#">Illustrations</a></li>
-                <li><a href="#">Comics</a></li>
-                <li><a href="#">Animations</a></li>
+                <li><a href="portfolio-illustrations.html">Illustrations</a></li>
+                <li><a href="portfolio-comics.html">Comics</a></li>
+                <li><a href="portfolio-animations.html">Animations</a></li>
 	</ul>
         </div>
         
@@ -414,21 +449,29 @@ padding-bottom: 5%;
         
         
         <div class="row-home">
+            
+        <h1>Branding</h1>
+            
   <div class="column" style="background-color:#fff;">
-      <a href="portfolio-graphic-designs.html"><img src="imagenes/Mock-ups/T-Shirt%20Mockup%20Template.jpg" class="center" style="width: 70%"></a>
-  
+      <a target="_blank" href="imagenes/Mock-ups/Free%20Brand%20Business%20Cards%20Mockup%20PSD%20For%20Presentation.jpg">
+   <img src="imagenes/Mock-ups/Free%20Brand%20Business%20Cards%20Mockup%20PSD%20For%20Presentation.jpg" class="center" style="width: 90%">
+      </a>
   </div>
   <div class="column" style="background-color:#fff;">
-      <a href="portfolio-illustrations.html"><img src="imagenes/rainydays.jpg" class="center" style="width: 70%"></a>
-  
+      <a target="_blank" href="imagenes/Mock-ups/ER-mockup.jpg">
+    <img src="imagenes/Mock-ups/ER-mockup.jpg" class="center" style="width: 90%">
+      </a>
   </div>
   <div class="column" style="background-color:#fff;">
-      <a href="portfolio-comics.html"><img src="imagenes/insta-comic.jpg" class="center" style="width: 70%"></a>
-  
+      <a target="_blank" href="imagenes/Mock-ups/Grocery-Meet-Logo-Mockup.jpg">
+   <img src="imagenes/Mock-ups/Grocery-Meet-Logo-Mockup.jpg" class="center" style="width: 90%">
+      </a>
   </div>
+      
     <div class="column" style="background-color:#fff;">
-        <a href="portfolio-animations.html"><img src="imagenes/Punpunimations-Logo.jpg" class="center" style="width: 70%"></a>
-  
+        <a target="_blank" href="imagenes/Mock-ups/T-Shirt%20Mockup%20Template.jpg">
+     <img src="imagenes/Mock-ups/T-Shirt%20Mockup%20Template.jpg" class="center" style="width: 90%">
+        </a>
   </div>
 </div>
         
@@ -437,19 +480,123 @@ padding-bottom: 5%;
           
         <div class="row-home">
   <div class="column2" style="background-color:#fff;">
-      <a href="portfolio-graphic-designs.html"><img src="imagenes/Mock-ups/T-Shirt%20Mockup%20Template.jpg" class="center2" style="width: 100%"></a>
-  
+      <a target="_blank" href="imagenes/Mock-ups/Isometric-Square-Hardcover-Book-Mockup.jpg">
+   <img src="imagenes/Mock-ups/Isometric-Square-Hardcover-Book-Mockup.jpg" class="center2" style="width: 100%">
+      </a>
   </div>
   <div class="column2" style="background-color:#fff;">
-      <a href="portfolio-illustrations.html"><img src="imagenes/rainydays.jpg" class="center2" style="width: 100%"></a>
-  
+      <a target="_blank" href="imagenes/Mock-ups/AniMate%20Sticker%20Envelope%20MockUp.jpg">
+  <img src="imagenes/Mock-ups/AniMate%20Sticker%20Envelope%20MockUp.jpg" class="center2" style="width: 100%">
+      </a>
   </div>
 </div>
         
-   
+        
+        
+        
+<div class="row-home">
+  
+  <div class="column" style="background-color:#fff;">
+      <a target="_blank" href="imagenes/Mock-ups/AniMate%20Bow%20Box%20MockUp.jpg">
+     <img src="imagenes/Mock-ups/AniMate%20Bow%20Box%20MockUp.jpg" class="center" style="width: 90%">
+      </a>
+  </div>
+  <div class="column" style="background-color:#fff;">
+      <a target="_blank" href="imagenes/Mock-ups/AniMate%20Brochure%202%20MockUp.jpg">
+     <img src="imagenes/Mock-ups/AniMate%20Brochure%202%20MockUp.jpg" class="center" style="width: 90%">
+      </a>
+  </div>
+  <div class="column" style="background-color:#fff;">
+      <a target="_blank" href="imagenes/Mock-ups/AniMate%20MockUp.jpg">
+     <img src="imagenes/Mock-ups/AniMate%20MockUp.jpg" class="center" style="width: 90%">
+      </a>
+  </div>
+    <div class="column" style="background-color:#fff;">
+        <a target="_blank" href="imagenes/Mock-ups/AniMate%20Shirt%20Tag%20MockUp.jpg">
+       <img src="imagenes/Mock-ups/AniMate%20Shirt%20Tag%20MockUp.jpg" class="center" style="width: 90%">
+        </a>
+  </div>
+</div>        
+         
+     
+        
+        <div class="row-home">
+            
+         <h1>Social Media Content</h1>   
+            
+   <div class="column" style="background-color:#fff;">
+      <a target="_blank" href="imagenes/Cursos%20COMU%20Depa.jpg">
+     <img src="imagenes/Cursos%20COMU%20Depa.jpg" class="center" style="width: 90%">
+      </a>
+  </div>
+  <div class="column" style="background-color:#fff;">
+      <a target="_blank" href="imagenes/NASA-promo.jpg">
+     <img src="imagenes/NASA-promo.jpg" class="center" style="width: 69.5%">
+      </a>
+  </div>
+  <div class="column" style="background-color:#fff;">
+      <a target="_blank" href="imagenes/Nominaciones-Representantes-estudiantiles-Depa.png">
+     <img src="imagenes/Nominaciones-Representantes-estudiantiles-Depa.png" class="center" style="width: 90%">
+      </a>
+  </div>
+    <div class="column" style="background-color:#fff;">
+        <a target="_blank" href="imagenes/Cortometraje-de-1-minuto-promo.png">
+       <img src="imagenes/Cortometraje-de-1-minuto-promo.png" class="center" style="width: 69.5%">
+        </a>
+  </div>
+</div>          
+        
+        
+   <div class="row-home">
+  <div class="column2" style="background-color:#fff;">
+      <a target="_blank" href="imagenes/Ilustraci%C3%B3n-de-Personajes-Promo-4.jpg">
+   <img src="imagenes/Ilustraci%C3%B3n-de-Personajes-Promo-4.jpg" class="center2" style="width: 100%">
+      </a>
+  </div>
+  <div class="column2" style="background-color:#fff;">
+      <a target="_blank" href="imagenes/ExpresArte-Challenge-Agenda-2.jpg">
+  <img src="imagenes/ExpresArte-Challenge-Agenda-2.jpg" class="center2" style="width: 100%">
+      </a>
+  </div>
+</div>        
+            
+            
+     <div class="row-home">
+  
+            
+  <div class="column" style="background-color:#fff;">
+      <a target="_blank" href="imagenes/3er%20taller%20AECOM%202020%202.jpg">
+   <img src="imagenes/3er%20taller%20AECOM%202020%202.jpg" class="center" style="width: 90%">
+      </a>
+  </div>
+  <div class="column" style="background-color:#fff;">
+      <a target="_blank" href="imagenes/4to-taller-2020.jpg">
+    <img src="imagenes/4to-taller-2020.jpg" class="center" style="width: 90%">
+      </a>
+  </div>
+  <div class="column" style="background-color:#fff;">
+      <a target="_blank" href="imagenes/Taller-4-grandioso.jpg">
+   <img src="imagenes/Taller-4-grandioso.jpg" class="center" style="width: 90%">
+      </a>
+  </div>
+      
+    <div class="column" style="background-color:#fff;">
+        <a target="_blank" href="imagenes/Taller-Espectacular.jpg">
+     <img src="imagenes/Taller-Espectacular.jpg" class="center" style="width: 90%">
+        </a>
+  </div>
+</div>
+                
+        
+         
         <div class="footer"><p>PunPunArtz • Nichole Ramos León</p>
             <p>Copyright © 2021</p></div>
-    
+        
+        
+ 
+        
+        
+        
     </body>
     
 </html>
