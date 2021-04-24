@@ -398,17 +398,25 @@ line-height: 24px;}
 
 
 
-
-
-
-
-
+            
+.footer0 {background-color: #f37620;
+                    color: black;
+                    text-align:center;
+                    padding: 20px 0px;
+                    margin-top: 200px;
+                    background-image: none;
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 4px;
+                    
+                   }
 
  .footer {background-color: #fdc516;
                     color: black;
                     text-align:center;
                     padding: 10px 0px;
-                    margin-top: 60px;
+                  
                     background-image: none;
                     font-family: 'Raleway', sans-serif;
                     font-weight: bold;
