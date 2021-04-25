@@ -369,7 +369,8 @@ font-size: 30px;
         
         <div class="about-me-h1"><h1>Who am I?</h1></div>
         
-        <center><div class="about-me-picture"><img src="imagenes/about-me.jpg" width="400" alt="Meet the Artist"></div></center>
+        <center><div class="about-me-picture"><img src="imagenes/about-me.jpg" width="400" alt="Meet the Artist"
+       onContextMenu="alert('This image is copyrighted&copy; by Nichole M. Ramos Leon\nDo not Download.');return false;"></div></center>
 
         
         <div class="about-me">
@@ -393,6 +394,24 @@ font-size: 30px;
         <p>Make ourselves known as the best company with high potential in graphic design and acquire experiences in various companies and/or agencies.</p><p> Follow our continuous academic development to update our profession in all its aspects and provide excellent service to our clients. </p><p>To become a better recognized company worldwide through animated projects.</p>    
         </div>
 
+        
+        
+         <script type="text/javascript">
+	
+$(document).ready(function() {
+	$('body').bind('cut copy paste', function (e) {
+		e.preventDefault();
+	})
+    
+	$("body").on("contextmenu", "img", function(e) {
+		return false;
+        
+        
+	})
+})
+
+</script>       
+ 
         
             
          <div class="footer0">
