@@ -1,21 +1,350 @@
 <!DOCTYPE html>
 <html>
 <head>
-     <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Work</title>
-   <link rel="stylesheet" href="style2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me</title>
     
+    
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+/*red= #9b1f2e
+orange= #f37620
+yellow= #fdc516
+lila= #947eba
+pink= #db69a1
+*/
+
+
+
+$desktop: 1200px; // col-xl
+$laptop: 992px;// col-lg
+$tablet: 768px; // md
+$phone: 480px; // sm
+
+
+
+{box-sizing: border-box;}
+body {margin: 0;}
+
+
+/*PHONE MENU*/
+
+
+
+
+.container {
+	position: relative;
+	padding: 100px;
+}
+
+nav {
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0 10%;
+    margin-top: 128px;
+	height: 54px;
+	background-color: black;
+}
+
+
+
+@media(min-width: 768px) {
+    
+.headerlogo {background-color: black;}    
+    
+    
+nav {
+    position:absolute;
+   }
+    
+    #nav-toggle {
+	position: absolute;
+	top: -200px; 
+}
+}
+
+nav .logo {
+	float: left;
+	width: 40%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	font-size: 24px;
+	color: #fff;
+}
+nav .links {
+
+    text-align:center;
+}
+nav .links li {
+	    display:inline;
+   margin-right: 29px;
+    padding-right: 1%;
+}
+        
+        @media screen and (max-width: 820px){        
+nav .links li {
+	    display:inline;
+   margin-right: 29px;
+    padding-right: 0%;
+}
+        }
+nav .links a {
+
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display:inline-block;
+    padding: 0;
+}
+
+
+
+nav a:hover {color: #fdc516}
+nav a:active {color: #947eba}
+
+@media screen and (max-width: 768px) {
+        
+.headerlogo {display: none;}    
+    
+    nav {background-image: url(imagenes/PunPunArtz-Logo-White.png);
+        background-position: top;
+                background-repeat: no-repeat;
+        background-size:contain;
+                
+    top: -128px;}
+    
+    
+    nav .links {
+	
+	
+	margin: 0;
+	width: 500px;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+nav .links li {
+	list-style: none;
+    
+}
+nav .links a {
+
+	padding: ;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    
+    
+}
+    
+nav a:hover {color: #fdc516}
+nav a:active {color: #947eba}
+
+    
+    #nav-toggle {
+	position: absolute;
+	top: -100px;
+}
+nav .icon-burger {
+	display: none;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+nav .icon-burger .line {
+	width: 30px;
+	height: 5px;
+	background-color: #fff;
+	margin: 5px;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+}
+    
+    
+	nav .logo {
+		float: none;
+		width: auto;
+		justify-content: center;
+	}
+	nav .links {
+		float: none;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 54px;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: rgba(0,0,0,.8);
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+        font-family: 'Raleway', sans-serif;
+	}
+	nav .links a {
+		font-size: 20px;
+        font-family: 'Raleway', sans-serif;
+	}
+	nav :checked ~ .links {
+		bottom: 0;
+	}
+	nav .icon-burger {
+		display: block;
+	}
+	nav :checked ~ .icon-burger .line:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(2) {
+		opacity: 0;
+	}
+	
+}
+
+
+
+.mv {
+    border-style: solid;
+    border-color: white;
+    box-shadow: 0 4px 8px 0 rgba(148, 126, 186, 0.2), 0 6px 20px 0 rgba(148, 126, 186, 0.2);
+     border-radius: 25px;
+    padding: 3% 8%;
+    margin: 8% 10%;    
+        }
+
+.mv h1 {
+      font-family: 'Passion One', cursive;
+        }
+
+.mv p {
+    font-family: 'Raleway', sans-serif;
+    color:gray;
+        }
+
+
+
+
+/**************************/
+
+
+/*LAPTOP SIZE*/
+
+
+
+
+/*PHONE SIZE*/
+
+@media screen and (max-width: 768px) {
+      
+    .header {padding-top: 22%;} 
+
+    
+    .column {
+    width: 100%;
+  }
+
+    
+    .home-h1 {font-size: 115%;
+    padding: 2% auto;}
+    
+    
+    .home-info p {margin-top: 20px;}
+    
+    .about-me p {width: 100%;
+    font-size: 200%;
+        padding: 10%;
+    }
+    
+  
+ 
+    
+}
+
+/**************************/
+
+
+
+
+
+
+/*ABOUT ME*/
+
+
+.about-me {margin-bottom: 180px;}
+
+.about-me p {color: gray;
+font-family: 'Raleway', sans-serif;
+font-size: 90%;
+margin: 2% 19.9%;
+padding: 8px 0px;
+line-height: 20px;
+width: 60%;
+text-align: justify;}
+
+.about-me-picture {text-align: center;}
+
+.about-me-h1 {color: black;
+text-align: center;
+font-family: 'Passion One', cursive;
+font-size: 30px;
+    margin: 150px auto 50px auto;}
+
+
+            
+.footer0 {background-color: #f37620;
+                    color: black;
+                    text-align:center;
+                    padding: 20px 0px;
+                    margin-top: 200px;
+                    background-image: none;
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 4px;
+                    
+                   }
+
+ .footer {background-color: #fdc516;
+                    color: black;
+                    text-align:center;
+                    padding: 10px 0px;
+                  
+                    background-image: none;
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 4px;
+                   }
+    </style>
     
     </head>
     
     <body>
-        
-        
-        
-        
     
- <center><div class="headerlogo">
+        
+   <center><div class="headerlogo">
     <img src="imagenes/PunPunArtz-Logo-web.png" width="150" height="150">   
        </div></center>
        
@@ -38,35 +367,36 @@
 	</label>
 </nav>
         
-      
+        <div class="about-me-h1"><h1>Who am I?</h1></div>
+        
+        <center><div class="about-me-picture"><img src="imagenes/about-me.jpg" width="400" alt="Meet the Artist"
+       onContextMenu="alert('This image is copyrighted&copy; by Nichole M. Ramos Leon\nDo not Download.');return false;"></div></center>
+
+        
+        <div class="about-me">
+            <p>My name is Nichole M. Ramos Leon and i'm a graphic designer, illustrator and animator who <span style="color: #db69a1"><b>loves to express herself through her creations</b></span>. I've always had a passion for drawing, so it has guided me to where I am today. Being a graphic designer has opened lots of gates for me, filling my life with amazing oportunities. I am currently a senior student at University of Puerto Rico from Humacao, my BA concentrated in <span style="color: #db69a1"><b>Comunications with emphasis in Graphic Design</b></span>. </p>
+            
+            <p>In College I had the opportunity to be part of my department's Comunication Association, AECOM (Asociación de Estudiantes de Comunicación), as Public Relations which makes me able to prepare myself for the future by <span style="color: #db69a1"><b>illustrating and managing social media</b></span>. I will add that I've worked under the supervision of one of the best professors in the department, Marcia Pacheco, and I was able to create a <span style="color: #db69a1"><b>welcoming animation</b></span> for the new members of AECOM. Such projects fill me with enthusiasm, skills, and strength when it comes to design and animation.</p> 
+            
+            <p>I aspire so many things, but one of them is to put my animations out to the world and be recognized by my talent. Having my original character <span style="color: #db69a1"><b>PunPun</b></span> come to life through my drawings and animation is <span style="color: #db69a1"><b>my main goal</b></span>. She thrives me to continue, to create comics, to enhance her story, and to make others laugh; someday she will be so big that my dream of being recognized will become a reality.</p>
+        </div>
         
         
+        <div class="mv">
+        <h1>Mision</h1>
+            
+            <p>Offer professional and high quality services meeting the needs of the public.</p><p> Stand out in the area of design and 2D animation efficiently.</p><p> Provide our services throughout the island to strengthen the brand and business of our clients by providing excellent, creative, and responsible work.</p>    
+        </div>
         
-<div class="row-work">
- 
-  <div class="column2" style="background-color:#fff;">
-      <h2>PunPun Short Comics</h2>
-  <img src="imagenes/insta-comic-1.jpg" class="center2" onContextMenu="alert('This image is copyrighted&copy; by Nichole M. Ramos Leon\nDo not Download.');return false;">
-    
-    <p>I illustrate <span style="color: #db69a1"><b>short comics for social media</b></span> involving my two main characters PunPun and Niko, telling funny stories through their interaction and any life experience they have. </p><p>People find them amusing and sometimes relatable which motivates me to keep doing what I love.</p>
-  </div>
-  <div class="column2" style="background-color:#fff;">
-      <h2>PunPun and Friends</h2>
-   <img src="imagenes/niko-fallsdown.jpg" class="center2" onContextMenu="alert('This image is copyrighted&copy; by Nichole M. Ramos Leon\nDo not Download.');return false;">
-    
-      <p>My illustrative work is followed by PunPun, Niko, and their friends. </p><p>These two are like Tom and Jerry, treating each other like siblings with stomps and glares. But in the end, <span style="color: #db69a1"><b>they love each other</b></span>. Sometimes I draw any other thing that comes to mind.</p>
-  </div>
-    <div class="column2" style="background-color:#fff;">
-          <h2>PunPunimations</h2>
-     <img src="imagenes/PunPunimations-Business-Name-Black.jpg" class="center2" onContextMenu="alert('This image is copyrighted&copy; by Nichole M. Ramos Leon\nDo not Download.');return false;">
-  
-        <p>PunPunimations is the <span style="color: #db69a1"><b>official name</b></span> for my animation studio, a studio where all of my animated projects will be published under, including the adventures of PunPun and her owner Niko as they <span style="color: #db69a1"><b>film themselves talking about any topic</b></span>.</p> <p>Its YouTube Channel is already in motion, so you can watch the first video already.
-       </p>
-  </div>
-</div>
+         <div class="mv">
+        <h1>Vision</h1>
+            
+        <p>Make ourselves known as the best company with high potential in graphic design and acquire experiences in various companies and/or agencies.</p><p> Follow our continuous academic development to update our profession in all its aspects and provide excellent service to our clients. </p><p>To become a better recognized company worldwide through animated projects.</p>    
+        </div>
+
         
         
- <script type="text/javascript">
+         <script type="text/javascript">
 	
 $(document).ready(function() {
 	$('body').bind('cut copy paste', function (e) {
@@ -81,8 +411,8 @@ $(document).ready(function() {
 })
 
 </script>       
-         
-           
+ 
+        
             
          <div class="footer0">
              <div class="column0">
@@ -90,9 +420,11 @@ $(document).ready(function() {
                   <a href="https://www.youtube.com/channel/UCktCD2w2sGtgmx38X9Kzvmw?view_as=subscriber"><img src="imagenes/youtube-symbol-1.png" style="width: 30px" ></a>
                   <a href="mailto:punpunartz@gmail.com"><img src="imagenes/email-symbol.png" style="width: 30px"></a>
              </div>
-            </div>       
-            <div class="footer"><p>PunPunArtz • Nichole Ramos León</p>
-            <p>Copyright © 2021</p></div>
+            </div>
+            
+        <div class="footer"><p>PunPunArtz • Nichole Ramos León</p>
+                <p>Copyright © 2021</p></div>
         
+       
     </body>
-</html>
+    </html>
