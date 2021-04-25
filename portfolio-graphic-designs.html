@@ -264,6 +264,7 @@ margin: 3%;}
   
 }
 
+            
 
 .row-home h1 {
      font-family: 'Passion One', cursive;
@@ -318,6 +319,30 @@ padding-bottom: 5%;
 .nav-portfolio a:hover {color: #f37620}
 .nav-portfolio a:active {color: #fdc516}            
 
+            
+  video {
+  max-width: 75%;
+  height: auto;
+}          
+            
+   .yt-video {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  border: none;
+    padding-left: 25%;
+}         
 
 /**************************/
 
@@ -375,9 +400,19 @@ padding-bottom: 5%;
         top: 36px;
     }  
        
-    
+    .video {width: 20%;}
    
-    
+    .responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  height: 80%;
+  border: none;
+    padding-left: 10%;
+}   
 }
 
 /**************************/
@@ -421,6 +456,7 @@ padding-bottom: 5%;
                     font-size: 12px;
                     line-height: 4px;
                    }
+        
         </style>
         
     </head>
@@ -472,49 +508,38 @@ padding-bottom: 5%;
 
         
         
- 
-        <div class="row-home">
+ <center>
+              <div class="row-home">
                   
-                  <h1>"A Smol Vacation" Comic</h1>
-  <div class="column3">
-      <a target="_blank" href="imagenes/insta-comic.jpg">
-    <img src="imagenes/insta-comic.jpg" width="300%" onContextMenu="alert('This image is copyrighted&copy; by Nichole M. Ramos Leon\nDo not Download.');return false;">
-          </a>
-  </div>
-           </div>
-       
-         
-         
-     <center>                
-           <div class="row-home">
-               
-               <h1>"Birthday" Comic</h1>
-    <div class="column3">
-    <a target="_blank" href="imagenes/birthday.jpg">
-    <img src="imagenes/birthday.jpg" width="300%" onContextMenu="alert('This image is copyrighted&copy; by Nichole M. Ramos Leon\nDo not Download.');return false;">
-          </a>
-  </div>
-
-           </div>
-   
-              
+                  <h1>AECOM Ad</h1>
            
-                <div class="row-home">
-                    
-                    <h1>"PunPun Issue #1"</h1>
-                    <p>Click image below to read at issuu.com</p>
-                    <a href="https://issuu.com/punpunartz/docs/punpun_comic_for_issuu">
-                    <img src="imagenes/Portada%20completa.png" width="40%" onContextMenu="alert('This image is copyrighted&copy; by Nichole M. Ramos Leon\nDo not Download.');return false;">
-                    </a>
-           </div>
-                   
-                                                                                 
-                    
-</center>
+<video width="600" controls
+    controlsList="nodownload">
+  <source src="videos/Anuncio%20AECOM.mp4" type="video/mp4" >
+</video>
+   
+          
+                  <h1>IAMS Commercial</h1>
+      
+         <video width="600" controls
+controlsList="nodownload" >
+  <source src="videos/IAMS%20Animation.mp4" type="video/mp4" >
+          </video>
+    
+            
+                  
+                  <h1>PunPun Official Intro</h1>
+         </div>
+     <div class="yt-video">
+        <iframe class="responsive-iframe" width="450px" height="100" src="https://www.youtube.com/embed/TGOe93v-M84">
+</iframe>  
+     </div>     
  
-         
-  
-   <script type="text/javascript">
+                
+         </center>
+    
+ 
+ <script type="text/javascript">
 	
 $(document).ready(function() {
 	$('body').bind('cut copy paste', function (e) {
@@ -529,17 +554,16 @@ $(document).ready(function() {
 })
 
 </script>       
-       
+         
         
         
- 
-     <div class="footer0">
+      <div class="footer0">
              <div class="column0">
                  <a href="https://www.instagram.com/punpunartz/"><img src="imagenes/instagram-1.png" style="width: 30px"></a>
                   <a href="https://www.youtube.com/channel/UCktCD2w2sGtgmx38X9Kzvmw?view_as=subscriber"><img src="imagenes/youtube-symbol-1.png" style="width: 30px" ></a>
                   <a href="mailto:punpunartz@gmail.com"><img src="imagenes/email-symbol.png" style="width: 30px"></a>
              </div>
-            </div>             
+            </div>            
         
          
         <div class="footer"><p>PunPunArtz • Nichole Ramos León</p>
