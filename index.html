@@ -434,22 +434,26 @@ margin: 3%;}
         
         <div class="row-home">
   <div class="column" style="background-color:#fff;">
-      <a href="portfolio-graphic-designs.html"><img src="imagenes/Iconos4.jpg" class="center" style="width: 110px"></a>
+      <a href="portfolio-graphic-designs.html"><img src="imagenes/Iconos4.jpg" class="center" style="width: 110px"
+      onContextMenu="alert('This image is copyrighted&copy; by Nichole M. Ramos Leon\nDo not Download.');return false;"></a>
     <h2>Graphic Designs</h2>
     <p>A display of professional works I've done.</p>
   </div>
   <div class="column" style="background-color:#fff;">
-      <a href="portfolio-illustrations.html"><img src="imagenes/Iconos3.jpg" class="center" style="width: 110px"></a>
+      <a href="portfolio-illustrations.html"><img src="imagenes/Iconos3.jpg" class="center" style="width: 110px"
+    onContextMenu="alert('This image is copyrighted&copy; by Nichole M. Ramos Leon\nDo not Download.');return false;"></a>
     <h2>Illustrations</h2>
     <p>An array of digital work displayed in full color.</p>
   </div>
   <div class="column" style="background-color:#fff;">
-      <a href="portfolio-comics.html"><img src="imagenes/Iconos2.jpg" class="center" style="width: 110px"></a>
+      <a href="portfolio-comics.html"><img src="imagenes/Iconos2.jpg" class="center" style="width: 110px"
+    onContextMenu="alert('This image is copyrighted&copy; by Nichole M. Ramos Leon\nDo not Download.');return false;"></a>
     <h2>Comics</h2>
     <p>Short comics prepared for personal purposes.</p>
   </div>
     <div class="column" style="background-color:#fff;">
-        <a href="portfolio-animations.html"><img src="imagenes/Iconos.jpg" class="center" style="width: 110px"></a>
+        <a href="portfolio-animations.html"><img src="imagenes/Iconos.jpg" class="center" style="width: 110px"
+    onContextMenu="alert('This image is copyrighted&copy; by Nichole M. Ramos Leon\nDo not Download.');return false;"></a>
     <h2>Animations</h2>
     <p>Motion graphics and frame by frame animations.</p>
   </div>
@@ -470,6 +474,21 @@ margin: 3%;}
         <div class="footer"><p>PunPunArtz • Nichole Ramos León</p>
             <p>Copyright © 2021</p></div>
         
+  <script type="text/javascript">
+	
+$(document).ready(function() {
+	$('body').bind('cut copy paste', function (e) {
+		e.preventDefault();
+	})
+    
+	$("body").on("contextmenu", "img", function(e) {
+		return false;
+        
+        
+	})
+})
+
+</script>       
         
  
         
