@@ -5,7 +5,7 @@
          <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Portfolio - Comics</title>
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <style>
         @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
@@ -479,7 +479,7 @@ padding-bottom: 5%;
                   <h1>"A Smol Vacation" Comic</h1>
   <div class="column3">
       <a target="_blank" href="imagenes/insta-comic.jpg">
-    <img src="imagenes/insta-comic.jpg" width="300%">
+    <img src="imagenes/insta-comic.jpg" width="300%" onContextMenu="alert('This image is copyrighted&copy; by Nichole M. Ramos León\nDo not Download.');return false;">
           </a>
   </div>
            </div>
@@ -492,7 +492,7 @@ padding-bottom: 5%;
                <h1>"Birthday" Comic</h1>
     <div class="column3">
     <a target="_blank" href="imagenes/birthday.jpg">
-    <img src="imagenes/birthday.jpg" width="300%">
+    <img src="imagenes/birthday.jpg" width="300%" onContextMenu="alert('This image is copyrighted&copy; by Nichole M. Ramos León\nDo not Download.');return false;">
           </a>
   </div>
 
@@ -505,7 +505,7 @@ padding-bottom: 5%;
                     <h1>"PunPun Issue #1"</h1>
                     <p>Click image below to read at issuu.com</p>
                     <a href="https://issuu.com/punpunartz/docs/punpun_comic_for_issuu">
-                    <img src="imagenes/Portada%20completa.png" width="40%">
+                    <img src="imagenes/Portada%20completa.png" width="40%" onContextMenu="alert('This image is copyrighted&copy; by Nichole M. Ramos León\nDo not Download.');return false;">
                     </a>
            </div>
                    
@@ -514,7 +514,25 @@ padding-bottom: 5%;
 </center>
  
          
+  
+   <script type="text/javascript">
+	
+$(document).ready(function() {
+	$('body').bind('cut copy paste', function (e) {
+		e.preventDefault();
+	})
     
+	$("body").on("contextmenu", "img", function(e) {
+		return false;
+        
+        
+	})
+})
+
+</script>       
+       
+        
+        
  
      <div class="footer0">
              <div class="column0">
