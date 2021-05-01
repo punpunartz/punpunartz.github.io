@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Resume</title>
-    
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
@@ -296,7 +296,8 @@ nav .icon-burger .line {
     
         
    <center><div class="headerlogo">
-    <img src="imagenes/PunPunArtz-Logo-web.png" width="150" height="150">   
+    <img src="imagenes/PunPunArtz-Logo-web.png" width="150" height="150"
+         onContextMenu="alert('This image is copyrighted&copy; by Nichole M. Ramos León\nDo not Download.');return false;">   
        </div></center>
        
        
@@ -322,10 +323,26 @@ nav .icon-burger .line {
 
 <div class="h1"><h1>Resume</h1> </div>      
 <center>
-     <a target="_blank" href="imagenes/Resume%20Creativo2.jpg">
-         <img src="imagenes/Resume%20Creativo.jpg" width="50%" class="resume-pic"> </a>
+     <a target="_blank" href="imagenes/Nichole%20Ramos%20-%20Resum%C3%A9.jpg">
+         <img src="imagenes/Preview%20Resume.jpg" width="50%" class="resume-pic"> </a>
          </center>       
         
+        
+       <script type="text/javascript">
+	
+$(document).ready(function() {
+	$('body').bind('cut copy paste', function (e) {
+		e.preventDefault();
+	})
+    
+	$("body").on("contextmenu", function(e) {
+		return false;
+        
+        
+	})
+})
+
+</script>      
         
 
      <div class="footer0">
@@ -336,6 +353,9 @@ nav .icon-burger .line {
              </div>
             </div>     
             
+        
+        
+        
         <div class="footer"><p>PunPunArtz • Nichole Ramos León</p>
                 <p>Copyright © 2021</p></div>
         
