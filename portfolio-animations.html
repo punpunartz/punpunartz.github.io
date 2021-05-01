@@ -5,6 +5,7 @@
          <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Portfolio - Animations</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <style>
         @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
@@ -473,7 +474,8 @@ padding-bottom: 5%;
             
     
  <center><div class="headerlogo">
-    <img src="imagenes/PunPunArtz-Logo-web.png" width="150" height="150">   
+    <img src="imagenes/PunPunArtz-Logo-web.png" width="150" height="150"
+           onContextMenu="alert('This image is copyrighted&copy; by Nichole M. Ramos León\nDo not Download.');return false;">   
        </div></center>
            
         
@@ -511,16 +513,25 @@ padding-bottom: 5%;
  <center>
               <div class="row-home">
                   
-                  <h1>AECOM Ad</h1>
+                           <h1>"Saqué to con Sacato" Animated Ad.</h1>
            
-<video width="600" controls>
+<video width="600" controls
+    controlsList="nodownload">
+  <source src="videos/Sacato%20concurso%20w.%20Creditos.mp4.mp4" type="video/mp4" >
+</video>
+                  
+                  <h1>AECOM Ad.</h1>
+           
+<video width="600" controls
+    controlsList="nodownload">
   <source src="videos/Anuncio%20AECOM.mp4" type="video/mp4" >
 </video>
    
           
-                  <h1>IAMS Commercial</h1>
+                  <h1>IAMS Unofficial Commercial</h1>
       
-         <video width="600" controls>
+         <video width="600" controls
+controlsList="nodownload" >
   <source src="videos/IAMS%20Animation.mp4" type="video/mp4" >
           </video>
     
@@ -537,6 +548,24 @@ padding-bottom: 5%;
          </center>
     
  
+ <script type="text/javascript">
+	
+$(document).ready(function() {
+	$('body').bind('cut copy paste', function (e) {
+		e.preventDefault();
+	})
+    
+	$("body").on("contextmenu", function(e) {
+		return false;
+        
+        
+	})
+})
+
+</script>       
+         
+        
+        
       <div class="footer0">
              <div class="column0">
                  <a href="https://www.instagram.com/punpunartz/"><img src="imagenes/instagram-1.png" style="width: 30px"></a>
