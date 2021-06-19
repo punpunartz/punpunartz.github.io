@@ -294,8 +294,8 @@ margin: 3%;}
             
             
 .nav-portfolio {
- padding-top: 10%;
-padding-bottom: 5%;
+ padding-top: 15%;
+padding-bottom: 0%;
     text-align: center;
             }            
             
@@ -373,7 +373,7 @@ padding-bottom: 5%;
         margin: 2.9%;
         padding-right:10%;
          position:relative;
-        top: 36px;
+        top: 100px;
     }  
        
     
@@ -438,7 +438,8 @@ padding-bottom: 5%;
             
     
  <center><div class="headerlogo">
-    <img src="imagenes/PunPunArtz-Logo-web.png" width="150" height="150">   
+    <img src="imagenes/PunPunArtz-Logo-web.png" width="150" height="150"
+           onContextMenu="alert('This image is copyrighted&copy; by Nichole M. Ramos León\nDo not Download.');return false;">   
        </div></center>
            
         
@@ -522,7 +523,7 @@ $(document).ready(function() {
 		e.preventDefault();
 	})
     
-	$("body").on("contextmenu", "img", function(e) {
+	$("body").on("contextmenu",  function(e) {
 		return false;
         
         
