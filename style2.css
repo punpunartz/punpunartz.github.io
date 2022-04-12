@@ -1,12 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+ @font-face {
+         src: url(fonts/Mobile-Sans.ttf);
+         font-family: mobile-sans;
+     }
+            @font-face {
+         src: url(fonts/CalSans-SemiBold.otf);
+         font-family: calsans;
+     }
+            @font-face {
+         src: url(fonts/PoetsenOne-Regular.ttf);
+         font-family: poetsenone;
+     }
 
-/*red= #9b1f2e
+/*red= #b11f23
 orange= #f37620
-yellow= #fdc516
-lila= #947eba
-pink= #db69a1
+yellow= #f4c81a
+blue= #052441
+bone white= #efebe1
+black= #000000
 */
 
 
@@ -35,18 +48,18 @@ nav {
 	left: 0;
 	right: 0;
 	top: 0;
-	font-family: 'Montserrat', sans-serif;
+	font-family: mobile-sans;
 	padding: 0 10%;
     margin-top: 128px;
 	height: 54px;
-	background-color: black;
+	background-color: #052441;
 }
 
 
 
 @media(min-width: 768px) {
     
-.headerlogo {background-color: black;}    
+.headerlogo {background-color: #052441;}    
     
     
 nav {
@@ -91,7 +104,7 @@ nav .links a {
 	font-weight: bold;
 	color: #fff;
 	text-decoration: none;
-    font-family: 'Raleway', sans-serif;
+    font-family: mobile-sans;
     text-align: center;
     display:inline-block;
     padding: 0;
@@ -100,7 +113,7 @@ nav .links a {
 
 
 nav a:hover {color: #fdc516}
-nav a:active {color: #947eba}
+nav a:active {color: #b11f23}
 
 @media screen and (max-width: 768px) {
         
@@ -135,7 +148,7 @@ nav .links a {
 	font-weight: bold;
 	color: #fff;
 	text-decoration: none;
-    font-family: 'Raleway', sans-serif;
+    font-family: mobile-sans;
     text-align: center;
     
     
@@ -190,7 +203,7 @@ nav .icon-burger .line {
 	}
 	nav .links a {
 		font-size: 20px;
-        font-family: 'Raleway', sans-serif;
+        font-family: mobile-sans;
 	}
 	nav :checked ~ .links {
 		bottom: 0;
@@ -235,7 +248,7 @@ nav .icon-burger .line {
 
 
 
-.home-h1 {font-family: 'Passion One', cursive;
+.home-h1 {font-family: poetsenone;
         text-align: center;
         padding: 1%;
         font-size: 180%;
@@ -248,7 +261,7 @@ margin-bottom: 60px;}
 
 
 .home-info h2 {color: white;
-    font-family: 'Raleway', cursive;
+    font-family: mobille-sans;
     font-size: 30px;
     text-align: center;
     padding-top: 5px;
@@ -257,7 +270,7 @@ margin-bottom: 60px;}
     letter-spacing: 1px}
 
 .home-info p {color: white;
-    font-family: 'Raleway', cursive;
+    font-family: mobile-sans;
     font-size: 100%;
     text-align: center;
     padding-bottom: ;
@@ -277,10 +290,10 @@ margin-bottom: 60px;}
 }
 
 
-.column h2 {font-family: 'Passion One', cursive;
+.column h2 {font-family: poetsenone;
 }
 
-.column p {font-family: 'Raleway', cursive;
+.column p {font-family: mobile-sans;
 color: gray;
 margin: 3%;}
 
@@ -351,7 +364,7 @@ margin: 3%;}
 .about-me {margin-bottom: 180px;}
 
 .about-me p {color: gray;
-font-family: 'Raleway', sans-serif;
+font-family: mobile-sans;
 font-size: 90%;
 margin: 2% 19.9%;
 padding: 8px 0px;
@@ -363,7 +376,7 @@ text-align: justify;}
 
 .about-me-h1 {color: black;
 text-align: center;
-font-family: 'Passion One', cursive;
+font-family: poetsenone;
 font-size: 30px;
     margin: 150px auto 50px auto;}
 
@@ -386,11 +399,12 @@ font-size: 30px;
         margin: 50px auto;
 width: 400px;}
 
-.column2 h2 {font-family:'Passion One', cursive;
-font-size:40px;}
+.column2 h2 {font-family: poetsenone;
+font-size:40px;
+color: #052441;}
 
 .column2 p {margin: 1.5% 20%;
-font-family:'Raleway', sans-serif;
+font-family: mobile-sans;
 font-size: 20px;
 color: gray;
 line-height: 24px;}
@@ -411,13 +425,13 @@ line-height: 24px;}
                     
                    }
 
- .footer {background-color: #fdc516;
+ .footer {background-color: #f4c81a;
                     color: black;
                     text-align:center;
                     padding: 10px 0px;
                   
                     background-image: none;
-                    font-family: 'Raleway', sans-serif;
+                    font-family: mobile-sans;
                     font-weight: bold;
                     font-size: 12px;
                     line-height: 4px;
