@@ -9,7 +9,18 @@
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
+ @font-face { 
+                src: url(fonts/Mobile-Sans.ttf);
+         font-family: mobile-sans;
+     }
+            @font-face {
+         src: url(fonts/CalSans-SemiBold.otf);
+         font-family: calsans;
+     }
+            @font-face {
+         src: url(fonts/PoetsenOne-Regular.ttf);
+         font-family: poetsenone;
+     }
 
 /*red= #9b1f2e
 orange= #f37620
@@ -51,14 +62,14 @@ nav {
 	padding: 0 10%;
     margin-top: 128px;
 	height: 54px;
-	background-color: black;
+	background-color: #052441;
 }
 
 
 
 @media(min-width: 768px) {
     
-.headerlogo {background-color: black;}    
+.headerlogo {background-color: #052441;}    
     
     
 nav {
@@ -104,7 +115,7 @@ nav .links a {
 	font-weight: bold;
 	color: #fff;
 	text-decoration: none;
-    font-family: 'Raleway', sans-serif;
+    font-family: mobile-sans;
     text-align: center;
     display:inline-block;
     padding: 0;
@@ -113,7 +124,7 @@ nav .links a {
 
 
 nav a:hover {color: #fdc516}
-nav a:active {color: #947eba}
+nav a:active {color: #b11f23}
 
 @media screen and (max-width: 768px) {
         
@@ -148,14 +159,14 @@ nav .links a {
 	font-weight: bold;
 	color: #fff;
 	text-decoration: none;
-    font-family: 'Raleway', sans-serif;
+    font-family: mobile-sans;
     text-align: center;
     
     
 }
     
 nav a:hover {color: #fdc516}
-nav a:active {color: #947eba}
+nav a:active {color: #b11f23}
 
     
     #nav-toggle {
@@ -200,11 +211,11 @@ nav .icon-burger .line {
 		overflow: hidden;
 		box-sizing: border-box;
 		transition: all .5s ease-in-out;
-        font-family: 'Raleway', sans-serif;
+        font-family: mobile-sans;
 	}
 	nav .links a {
 		font-size: 20px;
-        font-family: 'Raleway', sans-serif;
+        font-family: mobile-sans;
 	}
 	nav :checked ~ .links {
 		bottom: 0;
@@ -227,13 +238,14 @@ nav .icon-burger .line {
 
 
 
-        .h1 {font-family: "Passion One", cursive;
+        .h1 {font-family: poetsenone;
         font-size: 28px;
         text-align: center;
         padding-top: 120px;
-        padding-bottom: 30px;}
+        padding-bottom: 30px;
+        color: #052441;}
 
-  .resume-p {font-family: 'Raleway', cursive;
+  .resume-p {font-family:  mobile-sans;
             color: gray;
             font-size: 14x;
             margin-bottom: 5%;
@@ -286,7 +298,7 @@ nav .icon-burger .line {
                     padding: 10px 0px;
                     
                     background-image: none;
-                    font-family: 'Raleway', sans-serif;
+                    font-family: mobile-sans;
                     font-weight: bold;
                     font-size: 12px;
                     line-height: 4px;
@@ -299,7 +311,7 @@ nav .icon-burger .line {
     
         
    <center><div class="headerlogo">
-    <img src="imagenes/PunPunArtz-Logo-web.png" width="150" height="150"
+    <img src="imagenes/PunPunDesigns%20Logo%20Oficial-white%20edge.png" height="130"
          onContextMenu="alert('This image is copyrighted&copy; by Nichole M. Ramos León\nDo not Download.');return false;">   
        </div></center>
        
@@ -313,7 +325,7 @@ nav .icon-burger .line {
                 <li><a href="my-work.html">My Work</a></li>
                 <li><a href="portfolio-graphic-designs.html">Portfolio</a></li>
                 <li><a href="resume.html">Resume</a></li>
-                <li><a href="https://punpundesigns.wixsite.com/contact">Contact</a></li>
+                <li><a href="https://punpunartz.wixsite.com/contact">Contact</a></li>
         </ul>
 	<label for="nav-toggle" class="icon-burger">
 		<div class="line"></div>
@@ -354,15 +366,15 @@ $(document).ready(function() {
              <div class="column0">
                  <a href="https://www.instagram.com/punpunartz/"><img src="imagenes/instagram-1.png" style="width: 30px"></a>
                   <a href="https://www.youtube.com/channel/UCktCD2w2sGtgmx38X9Kzvmw?view_as=subscriber"><img src="imagenes/youtube-symbol-1.png" style="width: 30px" ></a>
-                  <a href="mailto:punpunartz@gmail.com"><img src="imagenes/email-symbol.png" style="width: 30px"></a>
+                  <a href="mailto:punpundesignspr@gmail.com"><img src="imagenes/email-symbol.png" style="width: 30px"></a>
              </div>
             </div>     
             
         
         
         
-        <div class="footer"><p>PunPunArtz • Nichole Ramos León</p>
-                <p>Copyright © 2021</p></div>
+        <div class="footer"><p>PunPunDesigns • Nichole M. Ramos León</p>
+                <p>Copyright © 2021 - Present</p></div>
         
        
     </body>
