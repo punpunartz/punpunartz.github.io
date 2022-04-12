@@ -7,15 +7,28 @@
         <title>Home</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <style>
+             @font-face {
+         src: url(fonts/Mobile-Sans.ttf);
+         font-family: mobile-sans;
+     }
+            @font-face {
+         src: url(fonts/CalSans-SemiBold.otf);
+         font-family: calsans;
+     }
+            @font-face {
+         src: url(fonts/PoetsenOne-Regular.ttf);
+         font-family: poetsenone;
+     }
+
         @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
-
-/*red= #9b1f2e
+          
+/*red= #b11f23
 orange= #f37620
-yellow= #fdc516
-lila= #947eba
-pink= #db69a1
+yellow= #f4c81a
+blue= #052441
+bone white= #efebe1
+black= #000000
 */
 
 
@@ -44,11 +57,11 @@ nav {
 	left: 0;
 	right: 0;
 	top: -128px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: calsans;
 	padding: 0 10%;
     margin-top: 128px;
 	height: 54px;
-	background-color: black;
+	background-color: #052441;
 }
 
 
@@ -100,7 +113,7 @@ nav .links a {
 	font-weight: bold;
 	color: #fff;
 	text-decoration: none;
-    font-family: 'Raleway', sans-serif;
+    font-family: mobile-sans;
     text-align: center;
     display:inline-block;
     padding: 0;
@@ -109,7 +122,7 @@ nav .links a {
 
 
 nav a:hover {color: #fdc516}
-nav a:active {color: #947eba}
+nav a:active {color: #b11f23}
 
 @media screen and (max-width: 768px) {
         
@@ -245,20 +258,21 @@ nav .icon-burger .line {
 
 
 
-.home-h1 {font-family: 'Passion One', cursive;
+.home-h1 {
+    font-family: poetsenone;
         text-align: center;
-        padding: 3%;
-        font-size: 180%;
+        padding: 9%;
+        font-size: 140%;
        margin: 3%;}
  
 
-.home-info {background-color: #db69a1;
+.home-info {background-color: #efebe1;
 padding:60px 6%;
 margin-bottom: 200px;}
 
 
-.home-info h2 {color: white;
-    font-family: 'Raleway', cursive;
+.home-info h2 {color: #052441;
+    font-family: calsans;
     font-size: 30px;
     text-align: center;
     padding-top: 5px;
@@ -266,8 +280,8 @@ margin-bottom: 200px;}
     margin: 0px;
     letter-spacing: 1px}
 
-.home-info p {color: white;
-    font-family: 'Raleway', cursive;
+.home-info p {color: #052441;
+    font-family: mobile-sans;
     font-size: 100%;
     text-align: center;
     padding-bottom: ;
@@ -280,7 +294,7 @@ margin-bottom: 200px;}
 /* Create three equal columns that floats next to each other */
 .column {
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
     float: left;
     width: 25%;
    
@@ -289,10 +303,11 @@ margin-bottom: 200px;}
 
         
 
-.column h2 {font-family: 'Passion One', cursive;
+.column h2 {font-family: poetsenone;
+    color: #052441;
 }
 
-.column p {font-family: 'Raleway', cursive;
+.column p {font-family: mobile-sans;
 color: gray;
 margin: 3%;}
 
@@ -314,10 +329,12 @@ margin: 3%;}
         width: 50%;}
 
 
-.disclaimer {font-family: 'Raleway', cursive;
+.disclaimer {font-family: mobile-sans;
             color: lightgray;
-            margin-top: 20%;
-            padding: 0% 30%;
+            margin-top: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
+            padding: 0% 20%;
             font-style: italic;
             text-align: center;}
 
@@ -368,7 +385,7 @@ margin: 3%;}
                     padding: 20px 0px;
                     margin-top: 100px;
                     background-image: none;
-                    font-family: 'Raleway', sans-serif;
+                    font-family: poetsenone;
                     font-weight: bold;
                     font-size: 12px;
                     line-height: 4px;
@@ -376,13 +393,13 @@ margin: 3%;}
                    }
 
 
- .footer {background-color: #fdc516;
+ .footer {background-color: #f4c81a;
                     color: black;
                     text-align:center;
                     padding: 10px 0px;
                     
                     background-image: none;
-                    font-family: 'Raleway', sans-serif;
+                    font-family: mobile-sans;
                     font-weight: bold;
                     font-size: 12px;
                     line-height: 4px;
@@ -403,7 +420,7 @@ margin: 3%;}
                 <li><a href="my-work.html">My Work</a></li>
                 <li><a href="portfolio-graphic-designs.html">Portfolio</a></li>
                  <li><a href="resume.html">Resume</a></li>
-                <li><a href="https://punpundesigns.wixsite.com/contact">Contact</a></li>
+                <li><a href="https://punpunartz.wixsite.com/contact">Contact</a></li>
 	</ul>
 	<label for="nav-toggle" class="icon-burger">
 		<div class="line"></div>
@@ -415,7 +432,7 @@ margin: 3%;}
         
         
         <div class="header">
-            <div class="logo2"> <img src="imagenes/PunPunArtz-Logo-web.png" width="350" height="350"
+            <div class="logo2"> <img src="imagenes/PunPunDesigns%20Logo%20Oficial-01.png"  height="350"
     onContextMenu="alert('This image is copyrighted&copy; by Nichole M. Ramos León\nDo not Download.');return false;"> </div>
             </div>
         
@@ -428,11 +445,11 @@ margin: 3%;}
         
         
         <div class="home-info">
-            <h2>What is PunPunArtz?</h2>
+            <h2>What is PunPunDesigns?</h2>
            
             <p>—</p>
             
-            <p>PunPunArtz is the artistic business name of the freelancer Nichole M. Ramos León, which is me!</p><p> I express myself along with my creations on my cartoonish logo, adding to it the essencial tool that creates the artist. </p><p>In this website you'll find interesting works in the arts of design, illustration and animation, all with the purpose of making connections and bringing my art and skills to you.</p>
+            <p>PunPunDesigns is the artistic business name of the freelancer graphic designer Nichole M. Ramos León, which is me!</p><p> I express myself along with my creations on my cartoonish logo, adding to it the essencial tool that creates the artist. </p><p>In this website you'll find interesting works in the arts of design, illustration and animation, all with the purpose of making connections and giving my services to you.</p>
         </div>     
         
         
@@ -468,7 +485,7 @@ margin: 3%;}
         
 
         
-    <p class="disclaimer">All Artistic Work by Nichole M. Ramos León shown and displayed in this website cannot and will not be downloaded by anyone unless authorized.</p>    
+    <p class="disclaimer">All Artistic Work by Nichole M. Ramos León shown and displayed in this website cannot and will not be downloaded by anyone unless authorized.</p>   
         
          
      
@@ -476,13 +493,13 @@ margin: 3%;}
              <div class="column0">
                  <a href="https://www.instagram.com/punpunartz/"><img src="imagenes/instagram-1.png" style="width: 30px"></a>
                   <a href="https://www.youtube.com/channel/UCktCD2w2sGtgmx38X9Kzvmw?view_as=subscriber"><img src="imagenes/youtube-symbol-1.png" style="width: 30px" ></a>
-                  <a href="mailto:punpunartz@gmail.com"><img src="imagenes/email-symbol.png" style="width: 30px"></a>
+                  <a href="mailto:punpundesignspr@gmail.com"><img src="imagenes/email-symbol.png" style="width: 30px"></a>
              </div>
             </div>
         
          
-        <div class="footer"><p>PunPunArtz • Nichole Ramos León</p>
-            <p>Copyright © 2021</p></div>
+        <div class="footer"><p>PunPunDesigns • Nichole M. Ramos León</p>
+            <p>Copyright © 2021 - Present</p></div>
         
   <script type="text/javascript">
 	
