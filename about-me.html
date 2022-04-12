@@ -10,12 +10,25 @@
     @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+        @font-face {
+         src: url(fonts/Mobile-Sans.ttf);
+         font-family: mobile-sans;
+     }
+            @font-face {
+         src: url(fonts/CalSans-SemiBold.otf);
+         font-family: calsans;
+     }
+            @font-face {
+         src: url(fonts/PoetsenOne-Regular.ttf);
+         font-family: poetsenone;
+     }
 
-/*red= #9b1f2e
+/*red= #b11f23
 orange= #f37620
-yellow= #fdc516
-lila= #947eba
-pink= #db69a1
+yellow= #f4c81a
+blue= #052441
+bone white= #efebe1
+black= #000000
 */
 
 
@@ -51,14 +64,14 @@ nav {
 	padding: 0 10%;
     margin-top: 128px;
 	height: 54px;
-	background-color: black;
+	background-color: #052441;
 }
 
 
 
 @media(min-width: 768px) {
     
-.headerlogo {background-color: black;}    
+.headerlogo {background-color: #052441;}    
     
     
 nav {
@@ -103,7 +116,7 @@ nav .links a {
 	font-weight: bold;
 	color: #fff;
 	text-decoration: none;
-    font-family: 'Raleway', sans-serif;
+    font-family: mobile-sans;
     text-align: center;
     display:inline-block;
     padding: 0;
@@ -112,7 +125,7 @@ nav .links a {
 
 
 nav a:hover {color: #fdc516}
-nav a:active {color: #947eba}
+nav a:active {color: #b11f23}
 
 @media screen and (max-width: 768px) {
         
@@ -228,26 +241,27 @@ nav .icon-burger .line {
 .mv {
     border-style: solid;
     border-color: white;
-    box-shadow: 0 4px 8px 0 rgba(148, 126, 186, 0.2), 0 6px 20px 0 rgba(148, 126, 186, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(5, 36, 65, 0.2), 0 6px 20px 0 rgba(5, 36, 65, 0.2);
      border-radius: 25px;
     padding: 3% 8%;
-    margin: 8% 10%;    
+    margin: 5% 19.9%;  
         }
 
 .mv h1 {
-      font-family: 'Passion One', cursive;
+      font-family: poetsenone;
+    color: #f37620;
         }
         
 
 .mv h2 {
-      font-family: 'Passion One', cursive;
-    color: #db69a1;
+      font-family: calsans;
+    color: #b11f23;
     font-size: 21px;
     padding-top: 20px;
         }        
 
 .mv p {
-    font-family: 'Raleway', sans-serif;
+    font-family: mobile-sans;
     color:gray;
         }
 
@@ -303,7 +317,7 @@ nav .icon-burger .line {
 .about-me {margin-bottom: 180px;}
 
 .about-me p {color: gray;
-font-family: 'Raleway', sans-serif;
+font-family: mobile-sans;
 font-size: 90%;
 margin: 2% 19.9%;
 padding: 8px 0px;
@@ -313,11 +327,11 @@ text-align: justify;}
 
 .about-me-picture {text-align: center;}
 
-.about-me-h1 {color: black;
+.about-me-h1 {color: #052441;
 text-align: center;
-font-family: 'Passion One', cursive;
+font-family: poetsenone;
 font-size: 30px;
-    margin: 150px auto 50px auto;}
+    margin: 15% auto 50px auto;}
 
 
             
@@ -334,13 +348,13 @@ font-size: 30px;
                     
                    }
 
- .footer {background-color: #fdc516;
+ .footer {background-color: #f4c81a;
                     color: black;
                     text-align:center;
                     padding: 10px 0px;
                   
                     background-image: none;
-                    font-family: 'Raleway', sans-serif;
+                    font-family: mobile-sans;
                     font-weight: bold;
                     font-size: 12px;
                     line-height: 4px;
@@ -353,7 +367,7 @@ font-size: 30px;
     
         
    <center><div class="headerlogo">
-    <img src="imagenes/PunPunArtz-Logo-web.png" width="150" height="150"
+    <img src="imagenes/PunPunDesigns%20Logo%20Oficial-white%20edge.png"  height="130"
            onContextMenu="alert('This image is copyrighted&copy; by Nichole M. Ramos León\nDo not Download.');return false;">   
        </div></center>
        
@@ -367,7 +381,7 @@ font-size: 30px;
                 <li><a href="my-work.html">My Work</a></li>
                 <li><a href="portfolio-graphic-designs.html">Portfolio</a></li>
                  <li><a href="resume.html">Resume</a></li>
-                <li><a href="https://punpundesigns.wixsite.com/contact">Contact</a></li>
+                <li><a href="https://punpunartz.wixsite.com/contact">Contact</a></li>
         </ul>
 	<label for="nav-toggle" class="icon-burger">
 		<div class="line"></div>
@@ -383,11 +397,11 @@ font-size: 30px;
 
         
         <div class="about-me">
-            <p>My name is Nichole M. Ramos León and i'm a graphic designer, illustrator and animator who <span style="color: #db69a1"><b>loves to express herself through her creations</b></span>. I've always had a passion for drawing, so it has guided me to where I am today. I am a college graduate from University of Puerto Rico of Humacao with a BA concentrated in <span style="color: #db69a1"><b>Comunications with emphasis in Graphic Designs</b></span>. Being a graphic designer has filled my life with amazing opportunities and I wouldn't change it for anything. </p>
+            <p>My name is Nichole M. Ramos León and i'm a graphic designer, illustrator and animator who <span style="color: #f37620"><b>loves to express herself through her creations</b></span>. I've always had a passion for drawing, so it has guided me to where I am today. I am a college graduate from University of Puerto Rico of Humacao with a BA concentrated in <span style="color: #f37620"><b>Communications with emphasis in Graphic Designs</b></span>. Being a graphic designer has filled my life with amazing opportunities and I wouldn't change it for anything. </p>
             
-            <p>In College I had the opportunity to be part of my department's Comunication Association, AECOM (Asociación de Estudiantes de Comunicación), as Public Relations which makes me able to prepare myself for the future by <span style="color: #db69a1"><b>illustrating and managing social media</b></span>. I will add that I've worked under the supervision of one of the best professors in the department, Marcia Pacheco, and I was able to create a <span style="color: #db69a1"><b>welcoming animation</b></span> for the new members of AECOM. Such projects fill me with enthusiasm, skills, and strength when it comes to design and animation.</p> 
+            <p>In College I had the opportunity to be part of my department's Comunication Association, AECOM (Asociación de Estudiantes de Comunicación), as Public Relations which makes me able to prepare myself for the future by <span style="color: #f37620"><b>illustrating and managing social media</b></span>. I will add that I've worked under the supervision of one of the best professors in the department, Marcia Pacheco, and I was able to create a <span style="color: #f37620"><b>welcoming animation</b></span> for the new members of AECOM. Such projects fill me with enthusiasm, skills, and strength when it comes to design and animation.</p> Right now i'm a proud member at a printing shop in Caguas working as a Graphic Designer, putting my skills to the test everyday.
             
-            <p>I aspire so many things, but one of them is to put my animations out to the world and be recognized by my talent. Having my original character <span style="color: #db69a1"><b>PunPun</b></span> come to life through my drawings and animation is <span style="color: #db69a1"><b>my main goal</b></span>. She thrives me to continue, to create comics, to enhance her story, and to make others laugh; someday she will be so big that my dream of being recognized will become a reality.</p>
+            <p>I aspire so many things, but one of them is to put my animations out to the world and be recognized by my talent. Having my original character <span style="color: #f37620"><b>PunPun</b></span> come to life through my drawings and animation is <span style="color: #f37620"><b>my main goal</b></span>. She thrives me to continue, to create comics, to enhance her story, and to make others laugh; someday she will be so big that my dream of being recognized will become a reality.</p>
         </div>
         
         
@@ -433,12 +447,12 @@ $(document).ready(function() {
              <div class="column0">
                  <a href="https://www.instagram.com/punpunartz/"><img src="imagenes/instagram-1.png" style="width: 30px"></a>
                   <a href="https://www.youtube.com/channel/UCktCD2w2sGtgmx38X9Kzvmw?view_as=subscriber"><img src="imagenes/youtube-symbol-1.png" style="width: 30px" ></a>
-                  <a href="mailto:punpunartz@gmail.com"><img src="imagenes/email-symbol.png" style="width: 30px"></a>
+                  <a href="mailto:punpundesignspr@gmail.com"><img src="imagenes/email-symbol.png" style="width: 30px"></a>
              </div>
             </div>
             
-        <div class="footer"><p>PunPunArtz • Nichole Ramos León</p>
-                <p>Copyright © 2021</p></div>
+        <div class="footer"><p>PunPunDesigns • Nichole M. Ramos León</p>
+                <p>Copyright © 2021 - Present</p></div>
         
        
     </body>
