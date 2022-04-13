@@ -123,6 +123,7 @@ nav a:active {color: #b11f23}
         background-position: top;
                 background-repeat: no-repeat;
         background-size:contain;
+         background-size: 40%;
                 
     top: -128px;}
     
